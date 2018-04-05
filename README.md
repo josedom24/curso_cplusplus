@@ -17,3 +17,8 @@
 13. Programación orientada a objetos. Clase, objetos, métodos, atributos, herencia, polimorfismo,...
 
 
+* http://c.conclase.net/curso/index.php
+* http://www.cplusplus.com/
+* https://www.tutorialspoint.com/cplusplus/index.htm
+* http://www4.tecnun.es/asignaturas/Informat1/AyudaInf/aprendainf/cpp/basico/cppbasico.pdf
+* http://www4.tecnun.es/asignaturas/Informat1/AyudaInf/aprendainf/cpp/avanzado/cppavan.pdf
