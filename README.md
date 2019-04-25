@@ -53,9 +53,6 @@
 31. Métodos principales de diccionarios
 32. Ejercicios de diccionarios
 
-## Excepciones
-
-33. Excepciones
 
 ## Introducción a los módulos
 
