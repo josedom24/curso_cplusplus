@@ -14,11 +14,14 @@
 //2. Calcular los grados celsius (C = (F-32)*5/9)
 //3. Mostrar grados celsius
 //################################################################################
+#include <iostream>
+using namespace std;
 
-Proceso CalcularGradosCelsius
-	Definir fahrenheit,celsius Como Real;
-	Escribir Sin Saltar "Introduce la temperatura ºF::";
-	Leer fahrenheit;
-	celsius <- (fahrenheit - 32) * 5 / 9;
-	Escribir "La temperatura es ",celsius, " ºC.";
-FinProceso
+int main(int argc, char *argv[]) {
+	float fahrenheit,celsius;
+	cout << "Introduce la temperatura ºF:";
+	cin >> fahrenheit;
+	celsius = (fahrenheit - 32) * 5 / 9;
+	cout << "La temperatura es " << celsius <<  " ºC." << endl;
+	return 0;
+}

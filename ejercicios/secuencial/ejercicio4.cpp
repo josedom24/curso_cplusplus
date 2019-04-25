@@ -13,14 +13,19 @@
 //2. Mostrar suma,resta, multiplicación y división
 //################################################################################
 
-Proceso Calcular
-	Definir num1,num2 Como Real;
-	Escribir Sin Saltar "Introduce el número 1:";
-	Leer num1;
-	Escribir Sin Saltar "Introduce el número 2:";
-	Leer num2;
-	Escribir "La suma es ", num1+num2;
-	Escribir "La resta es ", num1-num2;
-	Escribir "La multiplicación es ", num1*num2;
-	Escribir "La división es ", num1/num2;
-FinProceso
+#include <iostream>
+using namespace std;
+
+int main(int argc, char *argv[]) {
+	float num1,num2;
+	cout << "Introduce el número 1:";
+	cin >> num1;
+	cout << "Introduce el número 2:";
+	cin >> num2;
+	cout << "La suma es "<< num1+num2 << endl;
+	cout << "La resta es "<< num1-num2 << endl;
+	cout << "La multiplicación es "<< num1*num2 << endl;
+	cout << "La división es "<< num1/num2 << endl;
+	return 0;
+}
+
