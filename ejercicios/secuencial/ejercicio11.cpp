@@ -13,11 +13,16 @@
 //2. Mostrar distancia (valor absoluto de la diferencia)
 //################################################################################
 
-Proceso CalcularDistancia
-	Definir num1, num2 como Entero;
-	Escribir "Dime el número1:";
-	Leer num1;
-	Escribir "Dime el número2:";
-	Leer num2;
-	Escribir "Distancia:", abs(num1-num2);
-FinProceso
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(int argc, char *argv[]) {
+	int num1;
+	int num2;
+	cout << "Dime el número1:" << endl;
+	cin >> num1;
+	cout << "Dime el número2:" << endl;
+	cin >> num2;
+	cout << "Distancia:" << abs(num1-num2) << endl;
+	return 0;
+}

@@ -21,18 +21,27 @@
 //3. Mostrar nota final
 //################################################################################
 
-Proceso CalcularNota
-	Definir parcial1,parcial2,parcial3,examen,trabajo,nota como Real;
-	Escribir "Dime la nota del parcial 1:";
-	Leer parcial1;
-	Escribir "Dime la nota del parcial 2:";
-	Leer parcial2;
-	Escribir "Dime la nota del parcial 3:";
-	Leer parcial3;
-	Escribir "Dime la nota del examen:";
-	Leer examen;
-	Escribir "Dime la nota del trabajo:";
-	Leer trabajo;
-	nota <- ((parcial1 + parcial2 + parcial3)/3)*0.55 + 0.3*examen + 0.15*trabajo;
-	Escribir "Nota final:", nota;
-FinProceso
+#include<iostream>
+using namespace std;
+
+int main(int argc, char *argv[]) {
+	float examen;
+	float nota;
+	float parcial1;
+	float parcial2;
+	float parcial3;
+	float trabajo;
+	cout << "Dime la nota del parcial 1:" << endl;
+	cin >> parcial1;
+	cout << "Dime la nota del parcial 2:" << endl;
+	cin >> parcial2;
+	cout << "Dime la nota del parcial 3:" << endl;
+	cin >> parcial3;
+	cout << "Dime la nota del examen:" << endl;
+	cin >> examen;
+	cout << "Dime la nota del trabajo:" << endl;
+	cin >> trabajo;
+	nota = ((parcial1+parcial2+parcial3)/3)*0.55+0.3*examen+0.15*trabajo;
+	cout << "Nota final:" << nota << endl;
+	return 0;
+}

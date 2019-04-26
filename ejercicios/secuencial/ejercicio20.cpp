@@ -19,26 +19,32 @@
 //5. Mostrar euros y céntimos totales
 //################################################################################
 
-Proceso CalcularDinero
-	Definir euro2,euro1,cent50,cent20,cent10 como Entero;
-	Definir total_euros, total_centimos Como Entero;
-	Escribir Sin Saltar "Monedas de 2 euros:";
-	Leer euro2;
-	Escribir Sin Saltar "Monedas de 1 euro:";
-	Leer euro1;
-	Escribir Sin Saltar "Monedas de 50 céntimos:";
-	Leer cent50;
-	Escribir Sin Saltar "Monedas de 20 céntimos:";
-	Leer cent20;
-	Escribir Sin Saltar "Monedas de 10 céntimos:";
-	Leer cent10;
-	//2. Calular Euros (sumar monedas de 2 euros * 2 + monedas de 1 euro
-	total_euros <- euro2 * 2 + euro1;
-	//3. Calcular centimos (monedas de 50c * 50 + monedas de 30c * 30 + moneda de 20c * 20 `moneda de 10c * 10
-	total_centimos <- cent50 * 50 + cent20 * 20 + cent10 * 10;
-	//4. Convertir céntimos a euros (división entera entre 100)
-	total_euros <- total_euros + trunc(total_centimos / 100);
-	total_centimos <- total_centimos % 100;
-	Escribir total_euros," euros y ",total_centimos," céntimos.";
-FinProceso
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(int argc, char *argv[]) {
+	int cent10,cent20,cent50,euro1,euro2;
+	int total_centimos;
+	int total_euros;
+	cout << "Monedas de 2 euros:";
+	cin >> euro2;
+	cout << "Monedas de 1 euro:";
+	cin >> euro1;
+	cout << "Monedas de 50 céntimos:";
+	cin >> cent50;
+	cout << "Monedas de 20 céntimos:";
+	cin >> cent20;
+	cout << "Monedas de 10 céntimos:";
+	cin >> cent10;
+	// 2. Calular Euros (sumar monedas de 2 euros * 2 + monedas de 1 euro
+	total_euros = euro2*2+euro1;
+	// 3. Calcular centimos (monedas de 50c * 50 + monedas de 30c * 30 + moneda de 20c * 20 `moneda de 10c * 10
+	total_centimos = cent50*50+cent20*20+cent10*10;
+	// 4. Convertir céntimos a euros (división entera entre 100)
+	total_euros = total_euros+int(total_centimos/100);
+	total_centimos = total_centimos%100;
+	cout << total_euros << " euros y " << total_centimos << " céntimos." << endl;
+	return 0;
+}
+
 

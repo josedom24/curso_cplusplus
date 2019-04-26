@@ -17,15 +17,21 @@
 //3. Mostrar "a" y "b"
 //################################################################################
 
-Proceso IntercambiarVariables
-	Definir a,b,aux como Entero;
-	Escribir "Introduce valor de la variable A:";
-	Leer a;
-	Escribir "Introduce valor de la variable B:";
-	Leer b;
-	aux <- a;
-	a <- b;
-	b <- aux;
-	Escribir "Nuevo valor de A:", a;
-	Escribir "Nuevo valor de B:", b;
-FinProceso
+#include<iostream>
+using namespace std;
+int main(int argc, char *argv[]) {
+	int a;
+	int aux;
+	int b;
+	cout << "Introduce valor de la variable A:" << endl;
+	cin >> a;
+	cout << "Introduce valor de la variable B:" << endl;
+	cin >> b;
+	aux = a;
+	a = b;
+	b = aux;
+	cout << "Nuevo valor de A:" << a << endl;
+	cout << "Nuevo valor de B:" << b << endl;
+	return 0;
+}
+

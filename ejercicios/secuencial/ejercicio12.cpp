@@ -14,15 +14,19 @@
 //3. Mostrar distancia 
 //################################################################################
 
-Proceso CalcularDistanciaEntrePuntos
-	Definir x1,x2,y1,y2 como Entero;
-	Definir distancia como Real;
-	Escribir "Dime las coordenadas del punto 1:";
-	Leer x1;
-	Leer y1;
-	Escribir "Dime las coordenadas del punto 2:";
-	Leer x2;
-	Leer y2;
-	distancia <- raiz((x2-x1)^2 + (y2-y1)^2);
-	Escribir "Distancia:", distancia;
-FinProceso
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(int argc, char *argv[]) {
+	float distancia;
+	int x1, x2, y1, y2;
+	cout << "Dime las coordenadas del punto 1:" << endl;
+	cin >> x1;
+	cin >> y1;
+	cout << "Dime las coordenadas del punto 2:" << endl;
+	cin >> x2;
+	cin >> y2;
+	distancia = sqrt(pow((x2-x1),2)+pow((y2-y1),2));
+	cout << "Distancia:" << distancia << endl;
+	return 0;
+}

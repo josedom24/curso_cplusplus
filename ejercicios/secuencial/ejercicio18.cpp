@@ -15,17 +15,23 @@
 //4. Mostrar iniciales
 //################################################################################
 
-Proceso Iniciales
-	Definir nombre,apellido1,apellido2,inicial como Cadenas;
-	Escribir Sin Saltar "Dime tu nombre:";
-	Leer nombre;
-	Escribir Sin Saltar "Dime tu primer apellido:";
-	Leer apellido1;
-	Escribir Sin Saltar "Dime tu segundo apellido:";
-	Leer apellido2;
-	inicial<-subcadena(nombre,0,0);
-	inicial<-concatenar(inicial,subcadena(apellido1,0,0));
-	inicial<-concatenar(inicial,subcadena(apellido2,0,0));
-	inicial<-Mayusculas(inicial);
-	Escribir "Las iniciales son: ",inicial;
-FinProceso
+#include<iostream>
+#include<cctype>
+using namespace std;
+int main(int argc, char *argv[]) {
+	string apellido1;
+	string apellido2;
+	string inicial;
+	string nombre;
+	cout << "Dime tu nombre:";
+	cin >> nombre;
+	cout << "Dime tu primer apellido:";
+	cin >> apellido1;
+	cout << "Dime tu segundo apellido:";
+	cin >> apellido2;
+	inicial = toupper(nombre.substr(0,1)[0]);
+	inicial = inicial+char(toupper(apellido1.substr(0,1)[0]));
+	inicial = inicial+char(toupper(apellido2.substr(0,1)[0]));
+	cout << "Las iniciales son: " << inicial << endl;
+	return 0;
+}

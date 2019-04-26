@@ -17,10 +17,14 @@
 //4. Mostrar las raíces
 //################################################################################
 
-Proceso CalcularRaices
-	Definir num como Entero;
-	Escribir "Dime el número:";
-	Leer num;
-	Escribir "Raíz cuadrada:", raiz(num);
-	Escribir "Raíz cúbica:", num ^ (1/3);
-FinProceso 
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(int argc, char *argv[]) {
+	int num;
+	cout << "Dime el número:" << endl;
+	cin >> num;
+	cout << "Raíz cuadrada:" << sqrt(num) << endl;
+	cout << "Raíz cúbica:" << pow(num,(1/3)) << endl;
+	return 0;
+}

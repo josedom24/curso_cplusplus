@@ -22,27 +22,32 @@
 //6. Muestro la hora de llegada
 //################################################################################
 
-Proceso CalcularHoraLlegada
-	Definir horapartida, minpartida, segpartida, seginicial, segfinal,segviaje, horallegada, minllegada, segllegada Como Entero;
-	Escribir Sin Saltar "Hora de salida:";
-	Leer horapartida;
-	Escribir Sin Saltar "Minutos de salida:";
-	Leer minpartida;
-	Escribir Sin Saltar "Segundos de salida:";
-	Leer segpartida;
-	Escribir Sin Saltar "Tiempo que has tardado en segundos:";
-	Leer segviaje;
-	//Convierto la hora de salida a segundos
-	seginicial <- horapartida * 3600 + minpartida*60 + segpartida;
-	//Le sumo los segundos que he tardado
-	segfinal <- seginicial + segviaje;
-	//Convierto los segundos totales a hora, minúto y segundos
-	horallegada <- trunc(segfinal / 3600);
-	minllegada <- trunc((segfinal % 3600) / 60);
-	segllegada <- (segfinal % 3600) % 60;
-	//Muestro la hora de llegada
-	Escribir "Hora de llegada";
-	Escribir horallegada,":",minllegada,":",segllegada;
-	
-FinProceso
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main() {
+	int horallegada,minllegada,segllegada;
+	int horapartida,minpartida,segpartida;
+	int segfinal,seginicial,segviaje;
+	cout << "Hora de salida:";
+	cin >> horapartida;
+	cout << "Minutos de salida:";
+	cin >> minpartida;
+	cout << "Segundos de salida:";
+	cin >> segpartida;
+	cout << "Tiempo que has tardado en segundos:";
+	cin >> segviaje;
+	// Convierto la hora de salida a segundos
+	seginicial = horapartida*3600+minpartida*60+segpartida;
+	// Le sumo los segundos que he tardado
+	segfinal = seginicial+segviaje;
+	// Convierto los segundos totales a hora, minúto y segundos
+	horallegada = int(segfinal/3600);
+	minllegada = int((segfinal%3600)/60);
+	segllegada = (segfinal%3600)%60;
+	// Muestro la hora de llegada
+	cout << "Hora de llegada" << endl;
+	cout << horallegada << ":" << minllegada << ":" << segllegada << endl;
+	return 0;
+}
 

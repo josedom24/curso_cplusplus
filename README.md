@@ -1,3 +1,6 @@
+Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
+
+
 # Curso: Introducción a la programación con C++
 
 * Presentación del curso
@@ -12,51 +15,51 @@
 ## Introducción a C++
 
 4. Instalación de C++
-5. Escribir y ejecutar programas
+5. Escribir y ejecutar programas. Estructura del programa
 6. Mi primer programa en C++
 
 ## Tipos de datos básicos
 
-7. Datos y tipos de datos
-8. Tipos de datos numéricos
-9. Tipo de datos booleano
-10. Trabajando con variables
-11. Entrada y salida estándar
-12. Introducción a las cadenas de caracteres
+6. Tipos de datos simples
+7. Variables
+8. Operadores y expresiones
+9. Asignación de variables
+10. Entrada y salida de información
+12. Funciones matemáticas
 13. Pasando de pseudocódigo a C++
 14. Ejercicios estructura secuencial
 
-## Estructuras de control
+## Estructuras alternativas
 
-15. Estructura de control: Alternativas
-16. Ejercicios estructura alternativas
-17. Estructuras de control repetitivas: while
-18. Estructuras de control repetitivas: for
-19. Uso específico de variables: contadores, acumuladores e indicadores
-20. Ejercicios estructuras repetitivas
+17. Estructuras alternativas: Si
+18. Estructuras alternativas: Segun
+19. Ejercicios estructuras alternativas
 
-## Tipos de datos secuencias
+## Estructuras repetitivas
 
-21. Tipo de datos cadenas de caracteres
-22. Las cadenas de caracteres son inmutables
-23. Métodos principales de cadenas
-24. Ejercicios cadena de caracteres
-25. Tipo de datos secuencia: Listas
-26. Las listas son mutables
-27. Métodos principales de listas
-28. Tipo de datos secuencia: Tuplas
-29. Ejercicios de listas
+20. Estructuras repetitivas: Mientras
+21. Estructuras repetitivas: Repetir-Hasta Que
+22. Estructuras repetitivas: Para
+23. Uso específico de variables: contadores, acumuladores e indicadoresu23)
+24. Ejercicios estructuras repetitivas
 
-## Tipos de datos mapas
+## Cadenas de caracteres
 
-30. Tipo de datos mapa: diccionario
-31. Métodos principales de diccionarios
-32. Ejercicios de diccionarios
+24. Cadenas de caracteres estilo C
+25. Cadenas de caracteres con la clase string
+26. Funciones de cadenas de caracteres
+27. Ejercicios cadenas de caracteres
 
+## Pseudocódigo: Arrays
 
-## Introducción a los módulos
+26. Estructuras de datos: Arreglos (array)
+27. Arreglos unidimensionales: Vectores
+28. Arreglos multidimensionales: Tablas
+29. Ejercicios de arreglos
 
-34. Introducción a los módulos
+## Punteros
+
+## Estructuras y uniones
 
 ## Programación estructurada
 

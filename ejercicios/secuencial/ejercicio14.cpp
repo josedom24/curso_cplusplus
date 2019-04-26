@@ -17,12 +17,19 @@
 //4. Mostrar decenas y unidades
 //################################################################################
 
-Proceso CalcularDecenasUnidades
-	Definir num,decenas,unidades como Entero;
-	Escribir "Dime un número de dos cifras";
-	Leer num;
-	decenas <- trunc(num/10);
-	unidades <- num % 10;
-	Escribir "Primera cifra (decenas): ",decenas;
-	Escribir "Segunda cifra (unidades): ",unidades;
-FinProceso
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main(int argc, char *argv[]) {
+	int decenas;
+	int num;
+	int unidades;
+	cout << "Dime un número de dos cifras" << endl;
+	cin >> num;
+	decenas = trunc(num/10);
+	unidades = num%10;
+	cout << "Primera cifra (decenas): " << decenas << endl;
+	cout << "Segunda cifra (unidades): " << unidades << endl;
+	return 0;
+}

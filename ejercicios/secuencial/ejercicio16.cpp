@@ -21,15 +21,22 @@
 //4. Mostrar tiempo
 //################################################################################
 
-Proceso CalcularAdelantamiento
-	Definir velocidad1,velocidad2,distancia,tiempo como Real;
-	Escribir Sin Saltar "Dime la velocidad del coche 1 (km/h):";
-	Leer velocidad1;
-	Escribir Sin Saltar "Dime la velocidad del coche 2 (más pequeña)(km/h):";
-	Leer velocidad2;
-	Escribir Sin Saltar "Dime la distancia entre los coches (km):";
-	Leer distancia;
-	tiempo <- distancia / (velocidad1 - velocidad2);
-	tiempo<- tiempo * 60;
-	Escribir "Lo alcanza en ",tiempo, " minutos.";
-FinProceso
+#include<iostream>
+using namespace std;
+int main(int argc, char *argv[]) {
+	float distancia;
+	float tiempo;
+	float velocidad1;
+	float velocidad2;
+	cout << "Dime la velocidad del coche 1 (km/h):";
+	cin >> velocidad1;
+	cout << "Dime la velocidad del coche 2 (más pequeña)(km/h):";
+	cin >> velocidad2;
+	cout << "Dime la distancia entre los coches (km):";
+	cin >> distancia;
+	tiempo = distancia/(velocidad1-velocidad2);
+	tiempo = tiempo*60;
+	cout << "Lo alcanza en " << tiempo << " minutos." << endl;
+	return 0;
+}
+

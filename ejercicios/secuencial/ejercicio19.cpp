@@ -16,12 +16,17 @@
 //3. Mostrar puntos
 //################################################################################
 
-Proceso CalcularPuntos
-	Definir correctas, incorrectas, puntos como Enteros;
-	Escribir Sin Saltar "Dime cantidad de respuestas correctas:";
-	Leer correctas;
-	Escribir Sin Saltar "Dime cantidad de respuestas incorrectas:";
-	Leer incorrectas;
-	puntos <- correctas * 5 + incorrectas * (-1);
-	Escribir "Puntos: ",puntos;
-FinProceso
+#include<iostream>
+using namespace std;
+int main(int argc, char *argv[]) {
+	int correctas;
+	int incorrectas;
+	int puntos;
+	cout << "Dime cantidad de respuestas correctas:";
+	cin >> correctas;
+	cout << "Dime cantidad de respuestas incorrectas:";
+	cin >> incorrectas;
+	puntos = correctas*5+incorrectas*(-1);
+	cout << "Puntos: " << puntos << endl;
+	return 0;
+}

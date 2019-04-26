@@ -13,9 +13,13 @@
 //2. Mostrar precio final: precio - 15% del precio
 //################################################################################
 
-Proceso CalcularPrecio
-	Definir precio como Real;
-	Escribir "Dime el precio:";
-	Leer precio;
-	Escribir "Precio final:", precio- precio*0.15;
-FinProceso
+#include<iostream>
+using namespace std;
+
+int main(int argc, char *argv[]) {
+	float precio;
+	cout << "Dime el precio:" << endl;
+	cin >> precio;
+	cout << "Precio final:" << precio-precio*0.15 << endl;
+	return 0;
+}
