@@ -20,11 +20,13 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 
 ## Tipos de datos básicos
 
-6. Tipos de datos simples
-7. Variables
-8. Operadores y expresiones
-9. Asignación de variables
-10. Entrada y salida de información
+6. Datos y tipos de datos
+7. Tipos de datos numéricos
+8. Tipo de datos booleano
+8. Trabajando con Variables
+9. Operadores y expresiones
+10. Asignación de variables
+11. Entrada y salida de información
 12. Funciones matemáticas
 13. Pasando de pseudocódigo a C++
 14. Ejercicios estructura secuencial
