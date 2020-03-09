@@ -19,7 +19,7 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 ## Introducción a C++
 
 5. [Estructura del programa](curso/u05)
-6. Datos y tipos de datos
+6. [Datos y tipos de datos](curso/u06)
 7. Tipos de datos numéricos
 8. Tipo de datos booleano
 8. Trabajando con Variables
