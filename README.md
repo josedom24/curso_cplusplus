@@ -20,44 +20,46 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 
 5. [Estructura del programa](curso/u05)
 6. [Datos y tipos de datos](curso/u06)
-7. Literales, variables y constantes
-8. Tipos de datos numéricos
-9. Operaciones aritméticas
-10. Introducción a las cadenas de caracteres
-11. Entrada y salida de información
-12. Funciones matemáticas
-13. Pasando de pseudocódigo a C++
-14. Ejercicios estructura secuencial
+7. Literales y constantes
+8. Variables
+9. Tipos de datos numéricos enteros
+10. Tipos de datos numéricos reales
+11. Operaciones aritméticas
+12. Introducción a las cadenas de caracteres
+13. Entrada y salida de información
+14. Funciones matemáticas
+15. Pasando de pseudocódigo a C++
+16. Ejercicios estructura secuencial
 
 ## Estructuras alternativas
 
-15. Tipo de datos booleano
-16. Operaciones relacionales y lógicas
-17. Estructuras alternativas: Si
-18. Estructuras alternativas: Segun
-19. Ejercicios estructuras alternativas
+17. Tipo de datos booleano
+18. Operaciones relacionales y lógicas
+19. Estructuras alternativas: Si
+20. Estructuras alternativas: Segun
+21. Ejercicios estructuras alternativas
 
 ## Estructuras repetitivas
 
-20. Estructuras repetitivas: Mientras
-21. Estructuras repetitivas: Repetir-Hasta Que
-22. Estructuras repetitivas: Para
-23. Uso específico de variables: contadores, acumuladores e indicadoresu23)
-24. Ejercicios estructuras repetitivas
+1. Estructuras repetitivas: Mientras
+1. Estructuras repetitivas: Repetir-Hasta Que
+1. Estructuras repetitivas: Para
+1. Uso específico de variables: contadores, acumuladores e indicadoresu23)
+1. Ejercicios estructuras repetitivas
 
 ## Cadenas de caracteres
 
-24. Cadenas de caracteres estilo C
-25. Cadenas de caracteres con la clase string
-26. Funciones de cadenas de caracteres
-27. Ejercicios cadenas de caracteres
+1. Cadenas de caracteres estilo C
+1. Cadenas de caracteres con la clase string
+1. Funciones de cadenas de caracteres
+1. Ejercicios cadenas de caracteres
 
 ## Pseudocódigo: Arrays
 
-26. Estructuras de datos: Arreglos (array)
-27. Arreglos unidimensionales: Vectores
-28. Arreglos multidimensionales: Tablas
-29. Ejercicios de arreglos
+1. Estructuras de datos: Arreglos (array)
+1. Arreglos unidimensionales: Vectores
+1. Arreglos multidimensionales: Tablas
+1. Ejercicios de arreglos
 
 ## Punteros
 
@@ -65,17 +67,17 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 
 ## Programación estructurada
 
-35. Introducción a las funciones
-36. Funciones recursivas
-37. Ejercicios con funciones
-38. Más ejercicios
+1. Introducción a las funciones
+1. Funciones recursivas
+1. Ejercicios con funciones
+1. Más ejercicios
 
 ## Programación orientada a objetos
 
-39. Introducción a la programación orientada a objetos
-40. Encapsulamiento en la programación orientada a objetos
-41. Herencia y delegación
-42. Ejercicios de programación orientada a objetos
+1. Introducción a la programación orientada a objetos
+1. Encapsulamiento en la programación orientada a objetos
+1. Herencia y delegación
+1. Ejercicios de programación orientada a objetos
 
 
 

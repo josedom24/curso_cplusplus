@@ -29,3 +29,14 @@ Por último indicar que podemos hacer operaciones entre los distintos datos. Seg
 * **Otros operadores**: Durante el curso veremos algunos operadores más, por ejemplo para trabajar con bits o para trabajar con punteros.
 
 El tipo de dato de una expresión dependerá del resultado de la operación. 
+
+La precedencia de operadores es la siguiente:
+
+* Los paréntesis rompen la precedencia.
+* Operadores unarios (soĺo tienen un operador, por ejemplo el `-9`)
+* Multiplicar, dividir y módulo
+* Suma y resta
+* Operador lógico `&&` (Y lógico)
+* Operadores lógico `||` (O lógico)
+* Operadores de comparación
+* Operadores de asignación
