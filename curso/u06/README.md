@@ -39,5 +39,5 @@ El tipo de dato de una expresión dependerá del resultado de la operación. Por
         cout << 4 / 3.0 << endl;
         return 0;
 
-El resultado de dividir dos números enteros será un valor enteros, si dividimos una número real por un entero el resultado será un entero.
+El resultado de dividir dos números enteros será un valor entero, si dividimos una número real por un entero el resultado será un valor real.
 
