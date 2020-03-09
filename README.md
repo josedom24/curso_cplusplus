@@ -12,14 +12,13 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 2. Introducción a los lenguajes de programación
 3. Introducción a C++
 
+## Entorno de trabajo: Zanjai
+
+4. Instalación del IDE Zinjai (http://zinjai.sourceforge.net/)
+
 ## Introducción a C++
 
-4. Instalación de C++
-5. Escribir y ejecutar programas. Estructura del programa
-6. Mi primer programa en C++
-
-## Tipos de datos básicos
-
+5. Estructura del programa
 6. Datos y tipos de datos
 7. Tipos de datos numéricos
 8. Tipo de datos booleano
@@ -103,6 +102,7 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 * https://www.tutorialspoint.com/cplusplus/index.htm
 * http://www4.tecnun.es/asignaturas/Informat1/AyudaInf/aprendainf/cpp/basico/cppbasico.pdf
 * http://www4.tecnun.es/asignaturas/Informat1/AyudaInf/aprendainf/cpp/avanzado/cppavan.pdf
+* https://www.uv.es/sto/cursos/c++/curso95.pdf
 
 #### 2019
 
