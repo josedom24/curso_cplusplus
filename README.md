@@ -22,6 +22,7 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 6. [Datos y tipos de datos](curso/u06)
 7. Literales y constantes
 8. Variables
+9 . Operadores y expresiones
 9. Tipos de datos numéricos enteros
 10. Tipos de datos numéricos reales
 11. Operaciones aritméticas
