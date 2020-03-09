@@ -20,11 +20,10 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 
 5. [Estructura del programa](curso/u05)
 6. [Datos y tipos de datos](curso/u06)
-7. Tipos de datos numéricos
-8. Tipo de datos booleano
-8. Trabajando con Variables
-9. Operadores y expresiones
-10. Asignación de variables
+7. Literales, variables y constantes
+8. Tipos de datos numéricos
+9. Operaciones aritméticas
+10. Introducción a las cadenas de caracteres
 11. Entrada y salida de información
 12. Funciones matemáticas
 13. Pasando de pseudocódigo a C++
@@ -32,6 +31,8 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 
 ## Estructuras alternativas
 
+15. Tipo de datos booleano
+16. Operaciones relacionales y lógicas
 17. Estructuras alternativas: Si
 18. Estructuras alternativas: Segun
 19. Ejercicios estructuras alternativas
