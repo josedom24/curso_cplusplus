@@ -4,7 +4,7 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 # Curso: Introducción a la programación con C++
 
 * Presentación del curso
-* Transparecias del curso
+* Transparencias del curso
 
 ## Introducción a la programación
 

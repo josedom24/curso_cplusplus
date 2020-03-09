@@ -29,3 +29,4 @@ Veamos algunas elementos que forman parte de la estructura de un programa c++:
 * Los bloques de instrucciones se guardan entre los caracteres `{` y `}`.
 * Todas las instrucciones deben acabar en `;`.
 * En C++ podemos poner comentarios de una línea (utilizando los caracteres `//`) o comentarios de varias líneas (con los carácteres `/*` y `*/`). Todos los comentarios son ignorados por el compilador.
+* El lenguaje C++ distingue entre mayúsculas y minúsculas. Hay ciertas convenciones al nombrar, por ejemplo el nombre de las variables se suele poner siempre en minúsculas, mientras que el nombre de las constantes se suele poner en mayúsculas.
