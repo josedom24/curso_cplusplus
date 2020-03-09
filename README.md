@@ -84,7 +84,7 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 ## Unidades
 
 1. Introducción a la programación
-2. Introduccióna c y c++
+2. Introducción a c y c++
 3. Variables, constantes, operadores y tipos de datos
 4. Entrada y salida en c++
 5. Instrucción alternativas: if, switch
