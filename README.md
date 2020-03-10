@@ -22,14 +22,13 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 6. [Datos y tipos de datos](curso/u06)
 7. [Literales y constantes](curso/u07)
 8. [Variables](curso/u08)
-9. Tipos de datos numéricos enteros
-10. Tipos de datos numéricos reales
-11. Operadores aritméticos
-12. Introducción a las cadenas de caracteres
-13. Entrada y salida de información
-14. Funciones matemáticas
-15. Pasando de pseudocódigo a C++
-16. Ejercicios estructura secuencial
+9. Tipos de datos numéricos
+10. Operadores aritméticos
+11. Introducción a las cadenas de caracteres
+12. Entrada y salida de información
+13. Funciones matemáticas
+14. Pasando de pseudocódigo a C++
+15. Ejercicios estructura secuencial
 
 ## Estructuras alternativas
 
