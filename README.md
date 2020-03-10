@@ -12,18 +12,18 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 2. Introducción a los lenguajes de programación
 3. Introducción a C++
 
-## Entorno de trabajo: Zanjai
-
-4. Instalación del IDE Zinjai (http://zinjai.sourceforge.net/)
-
 ## Introducción a C++
 
+4. Instalación del IDE Zinjai (http://zinjai.sourceforge.net/)
 5. [Estructura del programa](curso/u05)
-6. [Datos y tipos de datos](curso/u06)
-7. [Literales y constantes](curso/u07)
-8. [Variables](curso/u08)
-9. [Tipos de datos numéricos](curso/u09)
-10. Operadores aritméticos
+6. Compilación y ejecución de programas
+
+## Tipos de datos básicos
+
+7. [Datos y tipos de datos](curso/u06)
+8. [Literales y constantes](curso/u07)
+9. [Variables](curso/u08)
+10. [Tipos de datos numéricos](curso/u09)
 11. Introducción a las cadenas de caracteres
 12. Entrada y salida de información
 13. Funciones matemáticas

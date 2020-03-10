@@ -103,3 +103,16 @@ Veamos un ejemplo con el operador aritmético de división:
 
 1. El resultado de la primera instrucción `cout` es `1`, porque hemos dividido dos enteros y el resultado es entero. Realmente hemos hecho una división entero donde la parte decimal la hemos truncado.
 2. El resultado de las otras instrucciones `cout` es `1.3333` ya que dividimos un `float` por un `int` y el resultado es `float`.
+
+## Operadores aritméticos
+
+* `+`: Suma dos números
+* `-`: Resta dos números
+* `*`: Multiplica dos números
+* `/`: Divide dos números.
+* `%`: Módulo o resto de la división
+* `+`, `-`: Operadores unarios positivo y negativo
+* `++`: Operador de incremento. Suma uno a la variable, `i++` es lo mismo que `i=i+1`.
+* `--`: Operdor de decremento. Resta uno a la variable.
+
+
