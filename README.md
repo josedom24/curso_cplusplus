@@ -26,9 +26,8 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 10. [Tipos de datos numéricos](curso/u09)
 11. Introducción a las cadenas de caracteres
 12. Entrada y salida de información
-13. Funciones matemáticas
-14. Pasando de pseudocódigo a C++
-15. Ejercicios estructura secuencial
+13. Pasando de pseudocódigo a C++
+14. Ejercicios estructura secuencial
 
 ## Estructuras alternativas
 
