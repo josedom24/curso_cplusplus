@@ -24,7 +24,7 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 8. [Variables](curso/u08)
 9. Tipos de datos numéricos enteros
 10. Tipos de datos numéricos reales
-11. Operadores aritméticas
+11. Operadores aritméticos
 12. Introducción a las cadenas de caracteres
 13. Entrada y salida de información
 14. Funciones matemáticas
@@ -34,7 +34,7 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 ## Estructuras alternativas
 
 17. Tipo de datos booleano
-18. Operadores relacionales y lógicas
+18. Operadores relacionales y lógicos
 19. Estructuras alternativas: Si
 20. Estructuras alternativas: Segun
 21. Ejercicios estructuras alternativas

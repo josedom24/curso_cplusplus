@@ -18,7 +18,7 @@ Podemos declarar una variable y posteriormente incializarla (con el operador de 
     int variable8;
     variable8=1000;
 
-Si declaramos una variable y no la incializamos tendrá un valor por defecto: la variables númericas tendrá un valor de `0` y los caracteres tendrán un valor de `\0`.
+Si declaramos una variable y no la inicializamos tendrá un valor por defecto: la variables númericas tendrá un valor de `0` y los caracteres tendrán un valor de `\0`.
 
 Las variables hay que declararla antes de usarla, pero es muy recomendable declarar todas las variables al principio de l función (esto era obligatorio en el lenguaje C).
 
