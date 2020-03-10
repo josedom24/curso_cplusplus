@@ -22,7 +22,7 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 6. [Datos y tipos de datos](curso/u06)
 7. [Literales y constantes](curso/u07)
 8. [Variables](curso/u08)
-9. Tipos de datos numéricos
+9. [Tipos de datos numéricos](curso/u09)
 10. Operadores aritméticos
 11. Introducción a las cadenas de caracteres
 12. Entrada y salida de información
