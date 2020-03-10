@@ -115,4 +115,25 @@ Veamos un ejemplo con el operador aritmético de división:
 * `++`: Operador de incremento. Suma uno a la variable, `i++` es lo mismo que `i=i+1`.
 * `--`: Operdor de decremento. Resta uno a la variable.
 
+## Funciones matématicas
 
+En la libreria `cmath` tnemos distintas funciones matemática. Las más útiles que podemos usar en nuestros programas son:
+
+* `double pow(double, double);`: Realiza la potencia, la base es el primer parámetro y el exponente el segundo. Recibe datos de tipo `double` y devuelve también una valor `double`.
+* `double sqrt(double);`: Realiza la raíz cuadrada del parámetro `double` que recibe. Devuelve un valor `double.
+* `int abs(int);`: Devuelve el valor absoluto (valor entero) del número entero que recibe como parámetro.
+
+Veamos un ejemplo:
+
+    #include <iostream>
+    #include <cmath>
+    using namespace std;
+
+    int main(int argc, char *argv[]) {
+    	int num1=4, num2=2;
+    	cout << "Potencia:" << pow(num1,num2) << endl; //Potencia
+    	cout << "Raíz Cuadrada:" << sqrt(num1) << endl; //Raíz cuadrada
+    	num1=-4;
+    	cout << "Valor absoluto:" << abs(num1) << endl; //Valor absoluto
+    	return 0;
+    }
