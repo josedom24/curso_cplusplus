@@ -133,6 +133,7 @@ En C++:
 ## Convertir un carácter a Mayúsculas
 
 En pseudocódigo:
+
     cadena <- Mayusculas(cadena)
 
 En C++ podemos convertir a mayúsculas un caracter:
