@@ -51,4 +51,5 @@ int main(int argc, char *argv[]) {
 			cout << "Mes incorrecto";
 			
 	}
+	return 0;
 }

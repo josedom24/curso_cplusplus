@@ -69,4 +69,5 @@ int main(int argc, char *argv[]) {
     {
         cout << "El numero era: " << num_secreto;
     }
+	return 0;
 }

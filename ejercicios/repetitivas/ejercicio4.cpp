@@ -52,4 +52,5 @@ int main(int argc, char *argv[]) {
 	cout << "Números positivos:" << cont_positivos << endl;
 	cout << "Números negativos:" << cont_negativos << endl;
 	cout << "Números igual a 0:" << cont_ceros << endl;
+	return 0;
 }

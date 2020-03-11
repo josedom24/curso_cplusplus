@@ -60,4 +60,5 @@ int main(int argc, char *argv[]) {
 			cout << "Triángulo Escaleno";
 		}
 	}
+	return 0;
 }

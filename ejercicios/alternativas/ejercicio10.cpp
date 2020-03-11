@@ -83,4 +83,5 @@ int main(int argc, char *argv[]) {
 	if(distancia==0) {
 		cout << "Circunferencias concétricas";
 	}
+	return 0;
 }

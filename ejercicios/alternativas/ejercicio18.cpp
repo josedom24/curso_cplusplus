@@ -49,5 +49,6 @@ int main(int argc, char *argv[]) {
 		default:
 			cout << "Día incorrecto";
 	}
+	return 0;
 }
 	

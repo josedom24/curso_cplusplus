@@ -88,4 +88,5 @@ int main(int argc, char *argv[]) {
 		}
 	}
 	cout << "El coste de la llamada:" << coste/100 << " euros.";
+	return 0;
 }

@@ -62,4 +62,5 @@ int main(int argc, char *argv[]) {
 	{
 		cout << "Peso incorrecto (no podemos transportar paquetes de más de 5Kg).";
 	}
+	return 0;
 }

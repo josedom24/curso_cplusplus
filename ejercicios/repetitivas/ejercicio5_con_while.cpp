@@ -34,5 +34,6 @@ int main(int argc, char *argv[]) {
 		cout << "Introduce un carácter:";
 		cin >> car;
 	}
+	return 0;
 }
 

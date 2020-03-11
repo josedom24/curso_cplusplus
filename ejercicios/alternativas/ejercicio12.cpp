@@ -29,4 +29,5 @@ int main(int argc, char *argv[]) {
 	else {
 		cout << "Año no bisiesto.";
 	}
+	return 0;
 }

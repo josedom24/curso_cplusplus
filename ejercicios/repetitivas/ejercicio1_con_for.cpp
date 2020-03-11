@@ -34,4 +34,5 @@ int main(int argc, char *argv[]) {
 		resultado = resultado * contador;
 	}
 	cout << "El resultado es " << resultado;
+	return 0;
 }

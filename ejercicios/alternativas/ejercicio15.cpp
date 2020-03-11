@@ -63,4 +63,5 @@ int main(int argc, char *argv[]) {
 	{
 		cout << "El número de alumnos debe ser un valor positivo.";
 	}
+	return 0;
 }

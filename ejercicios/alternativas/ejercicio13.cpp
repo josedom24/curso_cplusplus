@@ -75,4 +75,5 @@ int main(int argc, char *argv[]) {
 			cout << "Fecha correcta";
 		}
 	}
+	return 0;
 }

@@ -57,4 +57,5 @@ int main(int argc, char *argv[]) {
 		default:
 			cout << "Error: número incorrecto.";
 	}
+	return 0;
 }
