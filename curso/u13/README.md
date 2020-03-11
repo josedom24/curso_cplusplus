@@ -138,4 +138,4 @@ En pseudocódigo:
 En C++ podemos convertir a mayúsculas un caracter:
 
     char cadena = 'a';
-    cadena = upper(cadena)
+    cadena = toupper(cadena)

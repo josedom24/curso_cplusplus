@@ -16,20 +16,19 @@
 // 3. En caso contrario mostrar "La cadena no es mayúsculas"
 //################################################################################
 #include <iostream>
-#include <string>
-using namespace std;
 
+using namespace std;
 int main(int argc, char *argv[]) {
     string cad;
     cout << "Introduce una cadena:";
-	cin >> cad;
-    if (isupper(cad[0]))
+	getline(cin,cad);
+    if (cad[0] == toupper(cad[0]))
     {
-		cout << "La cadena es mayúsculas";
+		cout << "La cadena empieza por una letra mayúsculas";
     }
     else
     {
-		cout << "La cadena no es mayúsculas";
+		cout << "La cadena no empieza por una letra mayúsculas";
     }
     return 0;
 }

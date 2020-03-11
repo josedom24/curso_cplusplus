@@ -45,3 +45,5 @@ El operador `+` me permite unir datos de tipo cadenas.
     	return 0;
     }
 
+## Comparación de cadenas de caracteres
+

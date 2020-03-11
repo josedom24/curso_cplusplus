@@ -20,15 +20,14 @@
 //################################################################################
 
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main(int argc, char *argv[]) {
     string usuario, password;
     cout << "Introduce el usuario: " << endl;
-    cin >> usuario;
+    getline(cin,usuario);
     cout << "Introduce el password: " << endl;
-    cin >> password;
+    getline(cin,password);
     if (usuario=="pepe" && password == "asdasd")
     {
         cout << "Has entrado al sistema";
