@@ -8,9 +8,9 @@ Tradicionalmente en C una cadena de caracteres es un array de caracteres (un con
 
 ## Indexación de caracteres
 
-Los caracteres que forman una cadena se pueden referenciar por un indice (un número), de tal modo que el primer carácter está en la posición 0, eñ segundo en la posición 1, y así consecutivamente.. Por ejemplo para imprimir el primer carácter:
+Los caracteres que forman una cadena se pueden referenciar por un indice (un número), de tal modo que el primer carácter está en la posición 0, el segundo en la posición 1, y así consecutivamente.. Por ejemplo para imprimir el primer carácter:
 
     cout << cadena[0];
 
-
+## Algunas funciones para trabajar con cadenas
 
