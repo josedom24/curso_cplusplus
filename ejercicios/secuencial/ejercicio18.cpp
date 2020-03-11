@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
 	cout << "Dime tu primer apellido:";
 	getline(cin,apellido1);
 	cout << "Dime tu segundo apellido:";
-	getline(cin,apellido1);
+	getline(cin,apellido2);
 	inicial = toupper(nombre[0]);
 	inicial = inicial + char(toupper(apellido1[0]));
 	inicial = inicial + char(toupper(apellido2[0]));
