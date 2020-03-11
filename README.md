@@ -24,10 +24,10 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 8. [Literales y constantes](curso/u07)
 9. [Variables. Operadores de asignación.](curso/u08)
 10. [Tipos de datos numéricos. Operadores aritméticos](curso/u09)
-11. Introducción a las cadenas de caracteres
+11. [Introducción a las cadenas de caracteres](curso/u11)
 12. Entrada y salida de información
-13. Pasando de pseudocódigo a C++
-14. Ejercicios estructura secuencial
+13. [Pasando de pseudocódigo a C++](curso/u13)
+14. [Ejercicios estructura secuencial](curso/u14)
 
 ## Estructuras alternativas
 
