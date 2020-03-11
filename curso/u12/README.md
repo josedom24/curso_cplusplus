@@ -45,7 +45,7 @@ Por defecto el operador `>>` no es capaz de leer los espacios que podemos poner 
 
 Si introducimos por teclado "Pepe García", la salida del programa será "Pepe".
 
-Por lo tanto para poder leer los espacios al leer cadenas de caracteres vamos a usar la función `getlines`, donde indicamos como parámetros el la entrada estándar (`cin`) y la variable que de tipo `string` que vamos a leer. Por ejemplo:
+Por lo tanto para poder leer los espacios al leer cadenas de caracteres vamos a usar la función `getline`, donde indicamos como parámetros el la entrada estándar (`cin`) y la variable que de tipo `string` que vamos a leer. Por ejemplo:
 
     ...
     string nombre;
