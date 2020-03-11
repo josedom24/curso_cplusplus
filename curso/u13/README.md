@@ -14,9 +14,9 @@ En pseudocódigo:
 
 En C++:
 
-    char nombre[100];
+    string nombre;
     cout << "Dime tu nombre:";
-	cin >> nombre;
+	getline(cin, nombre);
 
 ### Leer números enteros
 
@@ -128,4 +128,5 @@ En pseudocódigo:
 
 En C++:
 
-    cadena3 = 
+    cadena3 = cadena1 + cadena2;
+

@@ -1,6 +1,3 @@
-Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
-
-
 # Curso: Introducción a la programación con C++
 
 * Presentación del curso
@@ -108,3 +105,4 @@ Quitar en ejercicios de secuenciales el1 y el 18, que sonde  cadenas.
 
 * https://www.geeksforgeeks.org/char-vs-stdstring-vs-char-c/
 * https://www.programiz.com/cpp-programming
+* [String](https://www.geeksforgeeks.org/c-string-class-and-its-applications/)
