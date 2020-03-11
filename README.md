@@ -17,10 +17,10 @@
 
 ## Tipos de datos básicos
 
-7. [Datos y tipos de datos](curso/u06)
-8. [Literales y constantes](curso/u07)
-9. [Variables. Operadores de asignación.](curso/u08)
-10. [Tipos de datos numéricos. Operadores aritméticos](curso/u09)
+7. [Datos y tipos de datos](curso/u07)
+8. [Literales y constantes](curso/u08)
+9. [Variables. Operadores de asignación.](curso/u09)
+10. [Tipos de datos numéricos. Operadores aritméticos](curso/u10)
 11. [Introducción a las cadenas de caracteres](curso/u11)
 12. Entrada y salida de información
 13. [Pasando de pseudocódigo a C++](curso/u13)

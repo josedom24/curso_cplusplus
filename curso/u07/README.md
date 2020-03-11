@@ -1,37 +1,41 @@
-# Literales y constantes
+# Datos y tipos de datos
 
-## Literales
+El tipo de dato representa la clase de datos con el que vamos a trabajar. 
 
-Los literales nos permiten representar valores. Estos valores pueden ser de diferentes tipos, de esta manera tenemos diferentes tipos de literales:
+Podemos clasificar los tipos de datos de la siguiente manera:
 
-* **Literales enteros**: Para representar números enteros utilizamos cifras enteras. Ejemplos números en base decimal: `5`,`-12`..., en base octal: `077` y en hexadecimal `0xfe`.
-* **Literales reales**: Utilizamos un punto para separar la parte entera de la decimal. Por ejemplo: `3.14159`. También podemos usar la letra `e` o `E` seguida de un exponente con signo para indicar la potencia de 10 a utilizar, por ejemplo: `6.63e-34`, `35E20`. 
-* **Literales booleanos o lógicos**: Los valores lógicos solo tienen dos valores: `false` para indicar el valor falso, y `true` para indicar el valor verdadero.
-* **Literales carácter**: Para indicar un valor de tipo carácter usamos la comilla simple `'`. Por ejemplo `'a'`. tenemos algunos caracteres especiales que son muy útiles, por ejemplo `\n` indica nueva línea y `\t` indica tabulador.
-* **Literales cadenas de caracteres**: Una cadena de caracteres es un conjunto de caracteres. Para indicar cadenas de caracteres usamos las dobles comillas `"`, por ejemplo: `"Hola"`.
+* **Tipos de datos simples**:
+    * Números enteros (`int`)
+    * Números reales (`float` o `double`)
+    * Valores lógicos (`bool`)
+    * Caracteres (`char`)
+* **Tipos de datos complejos**:
+    * Arrays
+    * Cadena de caracteres
+    * Estructuras de datos
 
-## Constantes
+Los datos con los que podemos trabajar en un programa lo podemos indicar de tres formas distintas:
 
-Una constante es un valor que identificamos con un nombre cuyo valor no cambia durante la ejecución del programa. Para crear constantes usamos:
+* **Literales**: Los literales nos permiten representar valores. Por ejemplo un literal entero podría ser el 5.
+* **Variables**: Una variables es un identificador que guarda un valor. Las variables se declaran de un determinado tipo de datos. Por ejemplo una variable entera puede guardar datos enteros.
+* **Constantes**: Podemos declarar un valor de un determinado tipo por medio de un identificador. Mientras el valor de una variable puede cambiar a lo largo de la ejecución de un programa, las constantes no pueden cambiar.
+* **Expresiones**: Por último indicar que podemos hacer operaciones entre los distintos datos. El tipo de dato de una expresión dependerá del resultado de la operación. Según el tipo de datos con los que trabajemos tenemos distintos tipos de operadores que estudiaremos durante este curso:
 
-    # define identificador valor
+  * **Operadores aritméticos**: Para hacer operaciones con tipos de datos numéricos.
+  * **Operadores relacionados**: Nos permiten comparar datos y nos devuelven valores lógicos
+  * **Operadores lógicos**: Nos permiten trabajar con valores lógicos.
+  * **Operadores de asignación**: Nos permiten asignar valores a variables.
+  * **Otros operadores**: Durante el curso veremos algunos operadores más, por ejemplo para trabajar con bits o para trabajar con punteros.
 
-Veamos un ejemplo:
+La precedencia de operadores es la siguiente:
 
-    #include <iostream>
-    using namespace std;
+* Los paréntesis rompen la precedencia.
+* Operadores unarios (soĺo tienen un operador, por ejemplo el `-9`)
+* Multiplicar, dividir y módulo
+* Suma y resta
+* Operador lógico `&&` (Y lógico)
+* Operadores lógico `||` (O lógico)
+* Operadores de comparación
+* Operadores de asignación
 
-    #define ANCHURA 10   
-    #define ALTURA  5
-    #define NUEVALINEA '\n'
 
-    int main() {
-       int area;  
-    
-       area = ANCHURA * ALTURA;
-       cout << area;
-       cout << NUEVALINEA;
-       return 0;
-    }
-
-Otra forma de crear constantes es usar el modificador `const` al crear una variable. Lo veremos cuando estudiemos las variables.

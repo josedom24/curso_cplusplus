@@ -1,83 +1,37 @@
-# Variables
+# Literales y constantes
 
-Una variable nos permite almacenar información. Cada variable tiene un nombre y al crearlas hay que indicar el tipo de datos que va a almacenar.
+## Literales
 
-El nombre de una variable puede estar formado por letras, dígitos y subrayados, pero no puede empezar por un dígito. Los nombres se suelen indicar en minúsculas.
+Los literales nos permiten representar valores. Estos valores pueden ser de diferentes tipos, de esta manera tenemos diferentes tipos de literales:
 
-## Declaración de variables
+* **Literales enteros**: Para representar números enteros utilizamos cifras enteras. Ejemplos números en base decimal: `5`,`-12`..., en base octal: `077` y en hexadecimal `0xfe`.
+* **Literales reales**: Utilizamos un punto para separar la parte entera de la decimal. Por ejemplo: `3.14159`. También podemos usar la letra `e` o `E` seguida de un exponente con signo para indicar la potencia de 10 a utilizar, por ejemplo: `6.63e-34`, `35E20`. 
+* **Literales booleanos o lógicos**: Los valores lógicos solo tienen dos valores: `false` para indicar el valor falso, y `true` para indicar el valor verdadero.
+* **Literales carácter**: Para indicar un valor de tipo carácter usamos la comilla simple `'`. Por ejemplo `'a'`. tenemos algunos caracteres especiales que son muy útiles, por ejemplo `\n` indica nueva línea y `\t` indica tabulador.
+* **Literales cadenas de caracteres**: Una cadena de caracteres es un conjunto de caracteres. Para indicar cadenas de caracteres usamos las dobles comillas `"`, por ejemplo: `"Hola"`.
 
-Para poder usar una variable tenemos que declarar, la declaración consiste en indicar el tipo y el nombre de la variable. Además en una declaración también podemos inicializar la variable con un valor. Veamos distintos ejemplos donde declaramos variables de tipo entero:
+## Constantes
 
-    int variable1;
-    int variable2=10;
-    int variable3, variable4, variable5;
-    int variable6=100, variable7=-10;
+Una constante es un valor que identificamos con un nombre cuyo valor no cambia durante la ejecución del programa. Para crear constantes usamos:
 
-Podemos declarar una variable y posteriormente incializarla (con el operador de asignación `=`).
+    # define identificador valor
 
-    int variable8;
-    variable8=1000;
-
-Si declaramos una variable y no la inicializamos tendrá un valor por defecto: la variables númericas tendrá un valor de `0` y los caracteres tendrán un valor de `\0`.
-
-Las variables hay que declararla antes de usarla, pero es muy recomendable declarar todas las variables al principio de l función (esto era obligatorio en el lenguaje C).
-
-
-## Ámbito de las variables
-
-Según donde declaremos las variables podrán ser:
-
-### Variables locales
-
-Están definidas dentro de una función o un bloque de instrucciones. Existen y se pueden usar sólo en esa función o bloque. Ejemplo:
-
+Veamos un ejemplo:
 
     #include <iostream>
     using namespace std;
-    
-    int main () {
-       // Declaración de variable local
-       int a, b;
-       int c;
-    
-       // Inicializamos las variables
-       a = 10;
-       b = 20;
-       c = a + b;
-    
-       cout << c;
-    
-       return 0;
-    } 
 
-### Variables globales
+    #define ANCHURA 10   
+    #define ALTURA  5
+    #define NUEVALINEA '\n'
 
-Están declaradas fuera de las funciones, se pueden usar en cualquier función del programa. No es recomendable su uso. Ejemplo:
-
-    #include <iostream>
-    using namespace std;
+    int main() {
+       int area;  
     
-    // Declaración de variable global
-    int g;
-    
-    int main () {
-       // Declaración de variable local
-       int a, b;
-    
-       // Inicializamos las variables
-       a = 10;
-       b = 20;
-       g = a + b;
-    
-       cout << g;
-    
+       area = ANCHURA * ALTURA;
+       cout << area;
+       cout << NUEVALINEA;
        return 0;
     }
 
-## Operadores de asignación
-
-Nos permiten guardar información en las variables. En una variable podemos guardar un literal, otra variable o el resultado de una expresión. Los operadores de asignación son los siguientes:
-
-* `=`: Asignación simple, por ejemplo: `a=b+7;`
-* `+=`: Suma y a continuación asigna. Por ejemplo: `a+=b` es igual que `a=a+b`. También podemos usar los operadores, `-=`, `*=`, `/=`,...
-
+Otra forma de crear constantes es usar el modificador `const` al crear una variable. Lo veremos cuando estudiemos las variables.
