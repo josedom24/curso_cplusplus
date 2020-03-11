@@ -22,7 +22,7 @@
 9. [Variables. Operadores de asignación.](curso/u09)
 10. [Tipos de datos numéricos. Operadores aritméticos](curso/u10)
 11. [Introducción a las cadenas de caracteres](curso/u11)
-12. Entrada y salida estándar
+12. [Entrada y salida estándar](curso/u12)
 13. [Pasando de pseudocódigo a C++](curso/u13)
 14. [Ejercicios estructura secuencial](curso/u14)
 
