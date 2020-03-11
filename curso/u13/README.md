@@ -130,3 +130,12 @@ En C++:
 
     cadena3 = cadena1 + cadena2;
 
+## Convertir un carácter a Mayúsculas
+
+En pseudocódigo:
+    cadena <- Mayusculas(cadena)
+
+En C++ podemos convertir a mayúsculas un caracter:
+
+    char cadena = 'a';
+    cadena = upper(cadena)

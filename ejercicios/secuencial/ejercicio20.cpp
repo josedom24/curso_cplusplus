@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
 	// 3. Calcular centimos (monedas de 50c * 50 + monedas de 30c * 30 + moneda de 20c * 20 `moneda de 10c * 10
 	total_centimos = cent50*50+cent20*20+cent10*10;
 	// 4. Convertir céntimos a euros (división entera entre 100)
-	total_euros = total_euros+int(total_centimos/100);
+	total_euros = total_euros + (total_centimos/100);
 	total_centimos = total_centimos%100;
 	cout << total_euros << " euros y " << total_centimos << " céntimos." << endl;
 	return 0;

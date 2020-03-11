@@ -16,7 +16,6 @@
 //################################################################################
 
 #include<iostream>
-#include<cctype>
 using namespace std;
 int main(int argc, char *argv[]) {
 	string apellido1;
@@ -24,14 +23,14 @@ int main(int argc, char *argv[]) {
 	string inicial;
 	string nombre;
 	cout << "Dime tu nombre:";
-	cin >> nombre;
+	getline(cin,nombre);
 	cout << "Dime tu primer apellido:";
-	cin >> apellido1;
+	getline(cin,apellido1);
 	cout << "Dime tu segundo apellido:";
-	cin >> apellido2;
-	inicial = toupper(nombre.substr(0,1)[0]);
-	inicial = inicial+char(toupper(apellido1.substr(0,1)[0]));
-	inicial = inicial+char(toupper(apellido2.substr(0,1)[0]));
+	getline(cin,apellido1);
+	inicial = toupper(nombre[0]);
+	inicial = inicial + char(toupper(apellido1[0]));
+	inicial = inicial + char(toupper(apellido2[0]));
 	cout << "Las iniciales son: " << inicial << endl;
 	return 0;
 }

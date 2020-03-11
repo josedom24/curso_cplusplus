@@ -15,9 +15,9 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-	char cadena[100];
+	string nombre;
 	cout << "Dime tu nombre:";
-	cin >> cadena;
-	cout << "Hola " << cadena << endl;	
+	getline(cin,nombre);
+	cout << "Hola " << nombre << endl;	
 	return 0;
 }

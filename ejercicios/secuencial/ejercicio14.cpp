@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
 	int unidades;
 	cout << "Dime un número de dos cifras" << endl;
 	cin >> num;
-	decenas = trunc(num/10);
+	decenas = num/10;
 	unidades = num%10;
 	cout << "Primera cifra (decenas): " << decenas << endl;
 	cout << "Segunda cifra (unidades): " << unidades << endl;

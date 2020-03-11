@@ -42,8 +42,8 @@ int main() {
 	// Le sumo los segundos que he tardado
 	segfinal = seginicial+segviaje;
 	// Convierto los segundos totales a hora, minúto y segundos
-	horallegada = int(segfinal/3600);
-	minllegada = int((segfinal%3600)/60);
+	horallegada = segfinal/3600;
+	minllegada = (segfinal%3600)/60;
 	segllegada = (segfinal%3600)%60;
 	// Muestro la hora de llegada
 	cout << "Hora de llegada" << endl;

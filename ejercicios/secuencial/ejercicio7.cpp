@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
 	int minutos, res_horas, res_min;
 	cout << "Dime la cantidad de minutos:";
 	cin >> minutos;
-	res_horas = trunc(minutos / 60);
+	res_horas = minutos / 60;
 	res_min = minutos % 60;
 	cout << res_horas << " horas y " << res_min << " minutos." << endl;	
 	return 0;
