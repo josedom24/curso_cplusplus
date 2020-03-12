@@ -28,7 +28,7 @@
 
 ## Estructuras alternativas
 
-15. Tipo de datos booleano. Operadores relacionales y lógicos
+15. [Tipo de datos booleano. Operadores relacionales y lógicos](curso/u15)
 16. [Estructuras alternativas: if](curso/u16)
 17. [Estructuras alternativas: switch](curso/u17)
 18. [Ejercicios estructuras alternativas](curso/u18)
@@ -36,9 +36,9 @@
 ## Estructuras repetitivas
 
 19. [Estructuras repetitivas: while](curso/u19)
-1. Estructuras repetitivas: so-while
+1. Estructuras repetitivas: do-while
 1. Estructuras repetitivas: for
-1. Uso específico de variables: contadores, acumuladores e indicadoresu23)
+1. Uso específico de variables: contadores, acumuladores e indicadores
 1. Ejercicios estructuras repetitivas
 
 ## Cadenas de caracteres
