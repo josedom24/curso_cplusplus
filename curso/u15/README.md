@@ -32,7 +32,7 @@ El valor devuelto por una operación lógica es un valor lógico:
 
 **Tabla de verdad del operador O**
 
-| a  | b  | a || b  |
+| a  | b  | a \|| b  |
 |---|---|--------------|
 | V  | V  | V  |
 | V  | F  | V  |
