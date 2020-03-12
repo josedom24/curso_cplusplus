@@ -30,7 +30,7 @@
 
 15. Tipo de datos booleano. Operadores relacionales y lógicos
 16. [Estructuras alternativas: Si](curso/u16)
-17. Estructuras alternativas: Segun
+17. [Estructuras alternativas: Segun](curso/u17)
 18. [Ejercicios estructuras alternativas](curso/u18)
 
 ## Estructuras repetitivas
