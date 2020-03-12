@@ -29,7 +29,7 @@
 ## Estructuras alternativas
 
 15. Tipo de datos booleano. Operadores relacionales y lógicos
-16. Estructuras alternativas: Si
+16. [Estructuras alternativas: Si](curso/u16)
 17. Estructuras alternativas: Segun
 18. [Ejercicios estructuras alternativas](curso/u18)
 
