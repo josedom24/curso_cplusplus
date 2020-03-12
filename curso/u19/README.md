@@ -74,9 +74,16 @@ Deja de ejecutar las restantes instrucciones del bucle y vuelve a iterar.
 
 Aunque podemos de hacerlo de varias formas, vamos a usar la instrucción `continue` para mostrar los número pares del 1 al 10:
 
-    cont = 0
-    while cont<10:
-        cont = cont + 1
-        if cont % 2 != 0:
-            continue
-        print(cont)
+	#include <iostream>
+	using namespace std;
+	
+	int main(int argc, char *argv[]) {
+		int cont = 0;
+		while (cont<10)
+		{
+			cont ++;
+			if (cont % 2 != 0) continue;
+			cout << cont << " ";
+		}
+		return 0;
+	}
