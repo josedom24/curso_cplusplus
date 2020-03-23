@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 	while(km1!=km2)
 	{
 		km1++;
-		km2--;
+		km2--	;
 	}
 	
 	cout << "Se encuentran en el km:" << km1;
