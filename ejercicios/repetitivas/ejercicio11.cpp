@@ -32,14 +32,14 @@ int main(int argc, char *argv[]) {
 	es_primo = true;
 	cout << "Introduce un número para comprobar si es primo:";
 	cin >> numero_es_primo;
-	for(num=2;num<=sqrt(numero_es_primo);nu++)
+	for(num=2;num<=sqrt(numero_es_primo);num++)
 	{
 		if(numero_es_primo % num == 0)
 			es_primo = false;
 	}
 	if(es_primo)
 		cout << "Es Primo" << endl;
-	SiNo
+	else
 		cout << "No es Primo" << endl;
 	return 0;
 }
