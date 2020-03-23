@@ -19,7 +19,6 @@
 //hasta que el carácter sea espacio
 //################################################################################
 #include <iostream>
-#include <string.h>
 using namespace std;
 
 int main(int argc, char *argv[]) {
