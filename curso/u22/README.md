@@ -24,24 +24,23 @@ Un contador es una variable entera que la utilizamos para contar cuando ocurre u
 
 Introducir 5 número y contar los números pares.
 
-    ```
-	#include <iostream>
-    using namespace std;
+    
+#include <iostream>
+using namespace std;
 
     int main(int argc, char *argv[]) {
         int var,cont,num;
-		cont=0;
-		for(var=1;var<=5;var++)
+        cont=0;
+        for(var=1;var<=5;var++)
         {
-			cout << "Dime un número:";
-			cin >> num;
-			if(num % 2 == 0)
-				cont=cont+1;
+            cout << "Dime un número:";
+            cin >> num;
+            if(num % 2 == 0)
+                cont=cont+1;
         }
-		cout << "Has introducido " << cont << " números pares.";
-	    return 0;
+    	cout << "Has introducido " << cont << " números pares.";
+    	return 0;
     }
-    ```
 
 ## Acumuladores
 
