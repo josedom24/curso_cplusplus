@@ -38,8 +38,8 @@ using namespace std;
             if(num % 2 == 0)
                 cont=cont+1;
         }
-    	cout << "Has introducido " << cont << " números pares.";
-    	return 0;
+        cout << "Has introducido " << cont << " números pares.";
+        return 0;
     }
 
 ## Acumuladores
