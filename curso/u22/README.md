@@ -57,21 +57,21 @@ Un acumulador es una variable numérica que permite ir acumulando operaciones. M
 Introducir 5 número y sumar los números pares.
 
 	#include <iostream>
-    using namespace std;
+	using namespace std;
 
-    int main(int argc, char *argv[]) {
-        int var,suma,num;
+	int main(int argc, char *argv[]) {
+		int var,suma,num;
 		suma=0;
 		for(var=1;var<=5;var++)
-        {
+		{
 			cout << "Dime un número:";
 			cin >> num;
 			if(num % 2 == 0)
 				suma=suma+num;
-        }
+		}
 		cout << "La suma de los números pares es " << suma;
-	    return 0;
-    }
+		return 0;
+	}
 
 ## Indicadores
 
@@ -93,23 +93,23 @@ Un indicador es una variable lógico, que usamos para recordar o indicar algún 
 
 Introducir 5 número e indicar si se ha introducido algún número par.
 
-    #include <iostream>
-    using namespace std;
+	#include <iostream>
+	using namespace std;
 
-    int main(int argc, char *argv[]) {
-        int var,num;
-        bool indicador;
+	int main(int argc, char *argv[]) {
+		int var,num;
+		bool indicador;
 		indicador = false;
 		for(var=1;var<=5;var++)
-        {
+		{
 			cout << "Dime un número:";
 			cin >> num;
 			if(num % 2 == 0)
 				indicador = true;
-        }
+		}
 		if(indicador)
 			cout << "Has introducido algún número par";
 		else
 			cout << "No has introducido algún número par";
-	    return 0;
-    }
+		return 0;
+	}
