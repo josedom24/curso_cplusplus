@@ -37,9 +37,9 @@
 
 19. [Estructuras repetitivas: while](curso/u19)
 20. [Estructuras repetitivas: do-while](curso/u20)
-1. Estructuras repetitivas: for
-1. Uso específico de variables: contadores, acumuladores e indicadores
-1. Ejercicios estructuras repetitivas
+21. Estructuras repetitivas: for
+22. Uso específico de variables: contadores, acumuladores e indicadores
+23. [Ejercicios estructuras repetitivas](curso/u23)
 
 ## Cadenas de caracteres
 
