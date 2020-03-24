@@ -6,7 +6,7 @@ Un contador es una variable entera que la utilizamos para contar cuando ocurre u
 
 * Se **declara**:
 
-    int cont;
+        int cont;
 
 * Se **inicializa** a un valor inicial (Por defecto una variable entera tiene el valor 0, pero no está mal inicializarla de todas formas).
 
@@ -78,15 +78,15 @@ Un indicador es una variable lógico, que usamos para recordar o indicar algún 
 
 * Se **declara** como una variable lógica:
 
-    bool indicador;
+        bool indicador;
 
 * Se **inicializa** a un valor lógico que indica que el suceso no ha ocurrido.
 
-	indicador = false;
+	    indicador = false;
 
 * Cuando ocurre el suceso que queremos recordar cambiamos su valor.
 
-	indicador = true;
+	    indicador = true;
 
 ### Ejemplo
 
