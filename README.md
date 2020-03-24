@@ -106,3 +106,4 @@
 * https://www.geeksforgeeks.org/char-vs-stdstring-vs-char-c/
 * https://www.programiz.com/cpp-programming
 * [String](https://www.geeksforgeeks.org/c-string-class-and-its-applications/)
+* [arrays](http://www.cplusplus.com/doc/tutorial/arrays/)
