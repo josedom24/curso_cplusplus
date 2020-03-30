@@ -25,13 +25,13 @@ int main(int argc, char *argv[]) {
 	while(cad[posicion]==' ')
 		posicion++;
 	
-	//Desde el primer caracter distinto de espacio
+	//Desde el primer carácter distinto de espacio
 	for(posicion=posicion;posicion<cad.length();posicion++)
 	{
 		if(cad[posicion]==' ')
 		{
 			cont++;
-			//No tengo en cuanta losposibles espacios que haya entre las palabras
+			//No tengo en cuanta los posibles espacios que haya entre las palabras
 			while(cad[posicion]==' ' && posicion<=cad.length())
 				posicion++;
 		}
