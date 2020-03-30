@@ -43,15 +43,15 @@
 
 ## Cadenas de caracteres
 
-1. Cadenas de caracteres estilo C
-1. Cadenas de caracteres con la clase string
-1. Funciones de cadenas de caracteres
-1. Ejercicios cadenas de caracteres
+24. Cadenas de caracteres con la clase string
+25. Funciones de cadenas de caracteres
+26. [Ejercicios cadenas de caracteres](curso/u26)
 
 ## Pseudocódigo: Arrays
 
 1. Estructuras de datos: Arreglos (array)
 1. Arreglos unidimensionales: Vectores
+1. Cadenas de caracteres estilo C
 1. Arreglos multidimensionales: Tablas
 1. Ejercicios de arreglos
 
