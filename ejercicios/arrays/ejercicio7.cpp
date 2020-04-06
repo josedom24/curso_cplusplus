@@ -7,7 +7,7 @@
 //Relleno los elementos de dos vectores. Posteriormente los recorro para sumar los
 //valores y guardarlo en un tercer vector.
 // Datos de entrada: N?meros para el primer vector, n?meros para el segundo vector
-// Informaci?n de salida: Los n?meros del tercer vector, que es la suma de 
+// Información de salida: Los n?meros del tercer vector, que es la suma de 
 //los anteriores
 // Variables: vector1,vector2,vector3 (vector de 12 enteros), 
 //            indice, tam_vector (entero)
