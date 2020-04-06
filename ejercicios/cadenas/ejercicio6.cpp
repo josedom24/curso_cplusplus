@@ -15,12 +15,15 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-	string str6,cad,invertida="";
-	str6 = "0123456789"; 
+    string cad,invertida="";
+    int posicion;
+    cout << "Introduce una cadena:";
+    getline(cin,cad);
+
+    for(posicion=cad.length()-1;posicion>=0;posicion--)
+	    invertida += cad[posicion];
 	
-	//  replace(a, b, str)  replaces b characters from a index by str 
-	str6.replace(9, 1,str('b')); 
-	
-	cout << str6 << endl; 
+	cout<< "La cadena invertida es:"<< invertida;
 	return 0;
 }
+	
