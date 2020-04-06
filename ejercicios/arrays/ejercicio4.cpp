@@ -13,7 +13,7 @@
 // Datos de entrada: Leo número positivos y los guardo en el vector, hasta que lea 
 //un número negativo o lea todos los elementos del vector.
 // Información de salida:Los elementos (números positivos) guardados en el vector.
-// Variables: vector (vector de 10 enteros), tam_vector,indice,num (Entero)
+// Variables: vector (vector de 10 enteros), indice,num (Entero)
 //################################################################################
 #include <iostream>
 using namespace std;

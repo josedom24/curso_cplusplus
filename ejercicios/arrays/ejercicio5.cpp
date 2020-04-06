@@ -9,7 +9,7 @@
 //no haya realizado ningún cambio, el vector está ordenado.
 // Datos de entrada: Nada
 // Información de salida: Números del vector ordenado.
-// Variables: vector (vector de 10 enteros), tam_vector,indice,aux,cambios (Entero)
+// Variables: vector (vector de 10 enteros),indice,aux,cambios (Entero)
 //################################################################################
 #include <iostream>
 using namespace std;

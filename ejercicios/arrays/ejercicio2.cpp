@@ -10,7 +10,6 @@
 // Datos de entrada: 5 cadenas de caracteres
 // Información de salida: Las cinco cadena pero mostrar den orden inverso.
 // Variables: vector1,vector2 (vector de 5 cadenas)
-//			  tam_vector1,tam_vector2(entero)
 //			  indicardor1, indicador2 (entero)
 //################################################################################
 

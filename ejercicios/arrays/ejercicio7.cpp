@@ -10,7 +10,7 @@
 // Información de salida: Los n?meros del tercer vector, que es la suma de 
 //los anteriores
 // Variables: vector1,vector2,vector3 (vector de 12 enteros), 
-//            indice, tam_vector (entero)
+//            indice (entero)
 //################################################################################
 #include <iostream>
 using namespace std;

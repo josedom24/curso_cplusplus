@@ -9,7 +9,7 @@
 //y la nota mínima. Finalmente calculo la media y muestro los valores.
 // Datos de entrada:5 notas.
 // Información de salida:Las notas, la nota media, nota máxima y nota mínima.
-// Variables: notas(vector de 10 enteros), tam_notas,indice (entero)
+// Variables: notas(vector de 10 enteros),indice (entero)
 //			  nota_media (real), suma,nota_max,nota_min  (entero)
 //################################################################################
 #include <iostream>
