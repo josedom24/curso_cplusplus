@@ -1,14 +1,14 @@
 //################################################################################
 //Realizar un programa que defina un vector llamado "vector_numeros" de 10 enteros,
-// a continuación lo inicialice con valores aleatorios (del 1 al 10) 
+// a continuaciï¿½n lo inicialice con valores aleatorios (del 1 al 10) 
 //y posteriormente muestre en pantalla cada elemento del vector junto con 
 //su cuadrado y su cubo.
 //################################################################################
-//Análisis
+//Anï¿½lisis
 //Recorro un vector de 10 enteros y lo inicializo con valoreas aleatorios. 
-//A continuación lo recorro para mostrar los valores, el cuadrado y el cubo.
+//A continuaciï¿½n lo recorro para mostrar los valores, el cuadrado y el cubo.
 // Datos de entrada: Nada
-// Información de salida: 10 números, su cuadrado y su cubo.
+// Informaciï¿½n de salida: 10 nï¿½meros, su cuadrado y su cubo.
 // Variables: vector_numeros (vector de 10 enteros)
 //################################################################################
 #include <iostream>
@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 	srand(time(NULL));
 	//Primer recorrido para leer el vector
 	for(indice=0;indice<TAM;indice++)
-		vector_numeros[indice]=rand() % 10 + 1;;
+		vector_numeros[indice]=rand() % 10 + 1;
 	
 	//Segundo recorrido para mostrar el resultado
 	for(indice=0;indice<TAM;indice++)
