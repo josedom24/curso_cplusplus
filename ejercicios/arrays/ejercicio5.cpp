@@ -44,4 +44,4 @@ int main(int argc, char *argv[]) {
 	for(indice=0;indice<TAM;indice++)
 		cout << vector[indice] << " ";
 	return 0;
-}
+}	
