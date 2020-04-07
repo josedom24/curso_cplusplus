@@ -48,7 +48,7 @@
 
 ## Tipos de datos complejos: Arrays
 
-26. Introducción a los arrays
+26. [Introducción a los arrays](curso/u26)
 27. Arrays unidimensionales: Vectores
 28. Cadenas de caracteres estilo C
 29. Arrays multidimensionales: Tablas
