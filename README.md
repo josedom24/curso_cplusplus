@@ -43,17 +43,16 @@
 
 ## Cadenas de caracteres
 
-24. Cadenas de caracteres con la clase string
-25. Funciones de cadenas de caracteres
-26. [Ejercicios cadenas de caracteres](curso/u26)
+24. [Cadenas de caracteres con la clase string](curso/u24)
+25. [Ejercicios cadenas de caracteres](curso/u25)
 
-## Pseudocódigo: Arrays
+## Tipos de datos complejos: Arrays
 
-1. Estructuras de datos: Arreglos (array)
-1. Arreglos unidimensionales: Vectores
-1. Cadenas de caracteres estilo C
-1. Arreglos multidimensionales: Tablas
-1. Ejercicios de arreglos
+26. Introducción a los arrays
+27. Arrays unidimensionales: Vectores
+28. Cadenas de caracteres estilo C
+29. Arrays multidimensionales: Tablas
+30. Ejercicios de Arrays
 
 ## Punteros
 
