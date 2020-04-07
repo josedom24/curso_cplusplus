@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
 //Parámetros de entrada y salida: valor máximo y mínimo
 //################################################################################
 
-void CalcularMaxMin(int vector[10], int size,int &max, int &min)
+void CalcularMaxMin(int vector[], int size,int &max, int &min)
 {
 	int i;
 	max=vector[0];
