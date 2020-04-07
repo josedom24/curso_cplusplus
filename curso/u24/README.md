@@ -1,6 +1,6 @@
 # Cadenas de caracteres con la clase string
 
-En el apartado [Introducción a las cadenas de caracteres](curso/u11) estuvimos estudiando varios aspectos de las cadenas en c++ usando la clase `string`:
+En el apartado **Introducción a las cadenas de caracteres** estuvimos estudiando varios aspectos de las cadenas en c++ usando la clase `string`:
 
 * Declaración de las cadenas de caracteres.
 * Indexación de los carácteres.
@@ -93,7 +93,7 @@ Vamos a ver los ejemplos a partir de esta cadena:
 
     #include <iostream>
     using namespace std;
-    
+
     int main(int argc, char *argv[]) {
     	string cadena="informática";
     
