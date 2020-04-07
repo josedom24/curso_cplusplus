@@ -4,6 +4,10 @@ Un **vector** es una array unidimensional. Para declarar un vector de 10 enteros
 
 	int vector[10];
 
+Podemos inicializar el vector a declararlo:
+
+	int vector[10]={1,2,3,4,5,6,7,8,9,10};
+
 Para acceder a cada uno de los elementos del vector utilizamos un índice. el primer elemento se accede con el índice 0. Podemos trabajar individualmente con cada uno de los elementos:
 
 	vector[0]=10;

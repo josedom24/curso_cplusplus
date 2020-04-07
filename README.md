@@ -51,7 +51,7 @@
 26. [Introducción a los arrays](curso/u26)
 27. [Arrays unidimensionales: Vectores](curso/u27)
 28. Cadenas de caracteres estilo C
-29. Arrays multidimensionales: Tablas
+29. [Arrays multidimensionales: Tablas](curso/u29)
 30. [Ejercicios de Arrays](curso/u30)
 
 ## Punteros
