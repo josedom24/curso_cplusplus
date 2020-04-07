@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 	
 	//La primera inicial es la primera letra de la primera palabra
 	iniciales.append(1,char(toupper(cad[posicion])));
-	
+
 	//Desde el primer carácter distinto de espacio
 	for(posicion=posicion;posicion<cad.length();posicion++)
 	{
