@@ -54,55 +54,24 @@
 29. [Arrays multidimensionales: Tablas](curso/u29)
 30. [Ejercicios de Arrays](curso/u30)
 
-## Punteros
+## Otros temas
 
-## Estructuras y uniones
+31. Introducción a los punteros
+32. Tipos de datos complejos: estructuras
 
 ## Programación estructurada
 
-1. Introducción a las funciones
-1. Funciones recursivas
-1. Ejercicios con funciones
-1. Más ejercicios
+33. Introducción a las funciones
+34. Funciones recursivas
+35. Ejercicios con funciones
+36. Más ejercicios
 
 ## Programación orientada a objetos
 
-1. Introducción a la programación orientada a objetos
-1. Encapsulamiento en la programación orientada a objetos
-1. Herencia y delegación
-1. Ejercicios de programación orientada a objetos
+37. Introducción a la programación orientada a objetos
+38. Encapsulamiento en la programación orientada a objetos
+39. Herencia y delegación
+40. Ejercicios de programación orientada a objetos
 
 
 
-# Curso C++
-
-## Unidades
-
-1. Introducción a la programación
-2. Introducción a c y c++
-3. Variables, constantes, operadores y tipos de datos
-4. Entrada y salida en c++
-5. Instrucción alternativas: if, switch
-6. Instrucciones repetitivas: for, while
-7. Funciones
-8. Arrays y punteros
-9. Cadenas de caracteres. Funciones
-10. Estructuras y uniones
-11. Asignación dinámica de memoria. Listas.
-12. Trabajo con ficheros
-13. Programación orientada a objetos. Clase, objetos, métodos, atributos, herencia, polimorfismo,...
-
-
-* http://c.conclase.net/curso/index.php
-* http://www.cplusplus.com/
-* https://www.tutorialspoint.com/cplusplus/index.htm
-* http://www4.tecnun.es/asignaturas/Informat1/AyudaInf/aprendainf/cpp/basico/cppbasico.pdf
-* http://www4.tecnun.es/asignaturas/Informat1/AyudaInf/aprendainf/cpp/avanzado/cppavan.pdf
-* https://www.uv.es/sto/cursos/c++/curso95.pdf
-
-#### 2019
-
-* https://www.geeksforgeeks.org/char-vs-stdstring-vs-char-c/
-* https://www.programiz.com/cpp-programming
-* [String](https://www.geeksforgeeks.org/c-string-class-and-its-applications/)
-* [arrays](http://www.cplusplus.com/doc/tutorial/arrays/)
