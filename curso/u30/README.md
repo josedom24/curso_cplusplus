@@ -115,4 +115,4 @@ El programa ira pidiendo los nombres de los equipos de cada partido y el resulta
 
 # Ejercicios resueltos
 
-[Ejercicios de arreglos](../../ejercicios/arreglos)
+[Ejercicios de arrays](../../ejercicios/arrays)
