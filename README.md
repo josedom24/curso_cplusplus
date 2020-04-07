@@ -52,7 +52,7 @@
 27. Arrays unidimensionales: Vectores
 28. Cadenas de caracteres estilo C
 29. Arrays multidimensionales: Tablas
-30. Ejercicios de Arrays
+30. [Ejercicios de Arrays](curso/u30)
 
 ## Punteros
 
