@@ -50,6 +50,6 @@ Otro ejemplo asignamos y mostramos el segundo elemento de la segunda fila de la 
 
     La última posición del vector es la 9, sin embargo estamos modificando la posición 10, es decir estamos modificando una posición de memoria que no corresponde al vector.
 
-    Del mismo mod puedo mostrar valores que están guardados en memoria y no correponden al vector:
+    Del mismo modo puedo mostrar valores que están guardados en memoria y no corresponden al vector:
 
         cout << vector[15];
