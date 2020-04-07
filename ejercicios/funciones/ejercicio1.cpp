@@ -31,5 +31,6 @@ void EscribirCentrado(string cad)
 	for(i=0;i< cad.size() ;i++)
 		cout << "=";
 	cout << endl;	
+	return 0;
 }
 
