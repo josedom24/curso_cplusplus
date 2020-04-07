@@ -15,9 +15,23 @@ Vamos a ver los ejemplos a partir de esta cadena:
 
     string cadena="informática";
 
-* clear(): Borra todos los caracteres de una cadena. Ejemplo:
+* `clear()`: Borra todos los caracteres de una cadena. Ejemplo:
 
         cadena.clear();
         cout << cadena; //No muestra nada, la cadena está vacía
 
-* 
+* `length()` o `size()`: Devuelve la cantidad de caracteres que tiene una cadena. Ejemplo:
+
+        cout << "La cadena " << cadena << " tiene " << cadedena.length() << "caracteres."
+    La salida sería:
+
+        La cadena informática tiene 11 caracteres.
+
+* `front()` y `back()`: Devuelve el primer carácter y el último de una cadena. Ejemplo:
+
+        cout << "Primer carácter: " << cadena.front() << endl; //Igual que cadena[0]
+        cout << "Último carácter: " << cadena.back() << endl; // Igual que cadena[[cadena.length() - 1]]
+
+        La salida sería:
+        Primer carácter: i
+        Último carácter: a
