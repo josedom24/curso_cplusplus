@@ -48,4 +48,5 @@ int main(int argc, char *argv[]) {
             factor_primo=true;
 		}
     }
+    return 0;
 }
