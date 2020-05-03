@@ -1,14 +1,54 @@
 //################################################################################
+//Diseñar un programa que permita adivinar al ordenador un determinado número
+//entero y positivo para lo cual se deben leer los límites en los que está 
+//comprendido dicho número.
+//################################################################################						
+
+
+#include <iostream>
+using namespace std;
+int devolverNumero(int liminf,int limsup);
+char LeerOpcion(int num,int &liminf,int &limsup);
+
+int main(int argc, char *argv[]) {
+	int limite_inferior, limite_superior, minumero;
+	char opcion;
+	int intentos=0;
+
+	cout << "Piensa un número..." << endl;
+	//Se pide el primer intervalo
+	cout << "Necesito saber el intervalo donde se encuentra el número:" << endl;
+	cout << "Límite inferior:" << endl; 
+	cin >> limite_inferior;
+	cout << "Límite superior:" << endl; 
+	cin >> limite_superior;
+	//Se va repitiendo hasta que se acierte el número
+	do {
+		//Escribimos el número propuesto (qué sera el número intermedio del intervalo)
+		minumero=devolverNumero(limite_inferior,limite_superior);
+		cout << "¿Has pensando en el número?:" << minumero << endl;
+		//Incrementamos el número de intentos
+		intentos=intentos+1;
+		//Leemos la opción, si no ha acertado se modifica algunos de los límites y se vuelve a proponer un nuevo número
+		opcion=LeerOpcion(minumero,limite_inferior,limite_superior);
+	}
+	while(toupper(opcion!='S'));
+	//Se escribe los intentos que ha necesitado para acertarlo
+	cout << "Lo he acertado en " << intentos << " intentos.";
+}
+
+
+//################################################################################
 //Función devolverNumero: Recibe un intervalo (límite inferior y superior) y 
 //devuelve el número intermedio como posible número que tiene que acertar.
 //Parámetro de entrada: Límite inferior y superior del intervalo.
 //Dato devuelto: Número intermedio del intervalo.
 //################################################################################
 
-Funcion num <- devolverNumero(liminf,limsup)
-	Definir num Como Entero;
-	num<-Trunc((liminf+limsup)/2);
-FinFuncion
+int devolverNumero(int liminf,int limsup)
+{
+	return (liminf+limsup) / 2;
+}
 
 //################################################################################
 //Función LeerOpcion: Recibe un intervalo (límite inferior y superior) y el número 
@@ -24,51 +64,22 @@ FinFuncion
 //Dato devuelto: Opción escogida
 //################################################################################
 
-Funcion opcion<-LeerOpcion(num,liminf Por Referencia,limsup Por Referencia)
-	Definir opcion Como Caracter;
-	Repetir
-		Escribir "¿Es correcto?";
-		Escribir "S: si es correcto.";
-		Escribir "A: si es más alto que el número a adivinar.";
-		Escribir "B: si es más bajo.";
-		Leer opcion;
-	Hasta Que Mayusculas(opcion)="S" o Mayusculas(opcion)="A" o Mayusculas(opcion)="B";
-	Si Mayusculas(opcion)="A" Entonces
-		liminf<-num;
-	FinSi
-	Si Mayusculas(opcion)="B" Entonces
-		limsup<-num;
-	FinSi
-FinFuncion
+char LeerOpcion(int num,int &liminf,int &limsup)
+{
+	char opcion;
+	do
+	{
+		cout << "¿Es correcto?"  << endl;
+		cout << "S: si es correcto."  << endl;
+		cout << "A: si es más alto que el número a adivinar." << endl;
+		cout << "B: si es más bajo." << endl;
+		cin >> opcion;
+	}
+	while(toupper(opcion)!='S' && toupper(opcion)!='A' && toupper(opcion)!='B');
+	if(toupper(opcion)!='A')
+		liminf=num;
+	if(toupper(opcion)!='B')
+		limsup=num;
+	return opcion;
+}
 
-//################################################################################
-//Diseñar un programa que permita adivinar al ordenador un determinado número
-//entero y positivo para lo cual se deben leer los límites en los que está 
-//comprendido dicho número.
-//################################################################################						
-
-Proceso AdivinarNumero
-	Definir limite_inferior, limite_superior, minumero Como Entero;
-	Definir opcion como Caracter;
-	Definir intentos Como Entero;
-	intentos<-0;
-	Escribir "Piensa un número...";
-	//Se pide el primer intervalo
-	Escribir "Necesito saber el intervalo donde se encuentra el número:";
-	Escribir Sin Saltar "Límite inferior:"; 
-	Leer limite_inferior;
-	Escribir Sin Saltar "Límite superior:"; 
-	Leer limite_superior;
-	//Se va repitiendo hasta que se acierte el número
-	Repetir
-		//Escribimos el número propuesto (qué sera el número intermedio del intervalo)
-		minumero<-devolverNumero(limite_inferior,limite_superior);
-		Escribir "¿Has pensando en el número?:", minumero;
-		//Incrementamos el número de intentos
-		intentos<-intentos+1;
-		//Leemos la opción, si no ha acertado se modifica algunos de los límites y se vuelve a proponer un nuevo número
-		opcion<-LeerOpcion(minumero,limite_inferior,limite_superior);
-	Hasta Que Mayusculas(opcion)="S";
-	//Se escribe los intentos que ha necesitado para acertarlo
-	Escribir "Lo he acertado en ",intentos," intentos.";
-FinProceso
