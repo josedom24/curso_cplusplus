@@ -16,9 +16,14 @@ Veamos un ejemplo:
 
 Si, por ejemplo definimos dos enteros:
 
-    int n=1523, m=121;
+    int m=121, n=1523;
 
 Tendremos 4 posiciones de memoria (el tipo entero se guarda en dos posiciones) donde se guarda el valor de las dos variables, cada posición tiene una dirección de memoria consecutiva:
 
 ![variable](img/enteros.png)
 
+## Los operadores & y *&
+
+![variable](img/operadores.png)
+
+**Nota: Las imágenes de esta unidad se han obtenido de: https://www.slideshare.net/CesarOsorio2/punteros-y-funciones**
