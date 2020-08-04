@@ -14,3 +14,11 @@ Veamos un ejemplo:
 
 ![variable](img/variable.png)
 
+Si, por ejemplo definimos dos enteros:
+
+    int n=1523, m=121;
+
+Tendremos 4 posiciones de memoria (el tipo entero se guarda en dos posiciones) donde se guarda el valor de las dos variables, cada posición tiene una dirección de memoria consecutiva:
+
+![variable](img/enteros.png)
+
