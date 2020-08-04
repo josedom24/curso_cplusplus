@@ -19,7 +19,7 @@ Para acceder a cada uno de los elementos del vector utilizamos un índice. el pr
 
 ## Recorrido de un vector
 
-Vamos a inicializar todos los elementos de un vector. Para ello vamos a **recorrer** el vector e inicializar cada elemento con un valor ,por ejemplo lo vamos a inicializar a 0. Para recorrer un vector utilizamos un bucle `Para`:
+Vamos a inicializar todos los elementos de un vector. Para ello vamos a **recorrer** el vector e inicializar cada elemento con un valor ,por ejemplo lo vamos a inicializar a 0. Para recorrer un vector utilizamos un bucle `for`:
 
 	for(i=0;i<10;i++)
 		array[i]=0;
