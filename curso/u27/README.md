@@ -41,15 +41,15 @@ Inicializar un vector de 5 cadenas a partir de los datos pedidos por teclado y p
         int i;
 		
 		for(i=0;i<5;i++)
-        {
+		{
 			cout << "Dime la cadena número "<< i+1<< ":";
 			cin >> vector[i];
 		}
 		cout << "Las cadenas y sus longitudes" << endl;
 		for(i=0;i<5;i++)
-        {
+		{
 			cout << vector[i] << ": " << vector[i].size() << endl;
-        }
+		}
         return 0;
-    }
+	}
 	
