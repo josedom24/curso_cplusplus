@@ -62,10 +62,10 @@
 
 ## Programación estructurada
 
-34. Programación estructurada
+34. [Programación estructurada](curso/u34)
 35. Funciones y procedimientos
 36. Funciones recursivas
-37. [Ejercicios con funciones](curso/u367)
+37. [Ejercicios con funciones](curso/u37)
 38. [Más ejercicios](curso/u38)
 
 ## Programación orientada a objetos

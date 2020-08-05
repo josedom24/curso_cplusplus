@@ -73,17 +73,22 @@ Para utilizar dicha función en el programa principal, primero debemos definir *
 
 Vamos a escribir un procedimiento que recibe una cadena de caracteres y lo muestra en pantalla subrayado. No devuelve ningún valor.
 
-	Funcion Subrayar(cad)
-		Definir i Como Entero;
-		Escribir cad;
-		Para i<-1 hasta Longitud(cad) hacer
-			Escribir Sin Saltar "-";
-		FinPara
-	FinFuncion	
-
-	Proceso Titulos
-		Definir titulo como cadena;
-		titulo <- "Ejercicio 1";
-		Subrayar(titulo);
-		Escribir "";
-	FinProceso
+	#include <iostream>
+	using namespace std;
+	void Subrayar(string cad);
+	
+	int main(int argc, char *argv[]) {
+		string nombre;
+		cout << "Dame un nombre:";
+		getline(cin,nombre);
+		Subrayar(nombre);
+		return 0;
+	}
+	
+	void Subrayar(string cad)
+	{
+		int i;
+		cout << cad << endl;
+		for (i=0;i<cad.size();i++)
+			cout << "-";
+	}
