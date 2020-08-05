@@ -56,22 +56,23 @@
 
 ## Otros temas
 
-31. Introducción a los punteros
-32. Tipos de datos complejos: estructuras
+31. [Introducción a los punteros (I)](curso/u31)
+32. [Introducción a los punteros (II)](curso/u32)
+33. Tipos de datos complejos: estructuras
 
 ## Programación estructurada
 
-33. Introducción a las funciones
-34. Funciones recursivas
-35. [Ejercicios con funciones](curso/u35)
-36. [Más ejercicios](curso/u36)
+34. Introducción a las funciones
+35. Funciones recursivas
+36. [Ejercicios con funciones](curso/u36)
+37. [Más ejercicios](curso/u37)
 
 ## Programación orientada a objetos
 
-37. Introducción a la programación orientada a objetos
-38. Encapsulamiento en la programación orientada a objetos
-39. Herencia y delegación
-40. Ejercicios de programación orientada a objetos
+38. Introducción a la programación orientada a objetos
+39. Encapsulamiento en la programación orientada a objetos
+40. Herencia y delegación
+41. Ejercicios de programación orientada a objetos
 
 
 

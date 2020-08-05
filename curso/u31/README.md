@@ -1,4 +1,4 @@
-# Introducción a los punteros
+# Introducción a los punteros (I)
 
 Hemos estudiado que las variables nos permiten guardar valores de distintos tipos en la memoria RAM del ordenador. Cada posición de memoria donde guardamos un dato tiene una dirección de memoria que nos permite localizar ea posición.
 
