@@ -18,11 +18,11 @@ Para definir una función o procedimiento:
 	tipo nombre_de_la_subrutina(argumento_1, argumento_2, ... )
 	{
 		acción 1;
-    	acción 2;
+		acción 2;
              .
              .
              .
-        acción n;
+		acción n;
 	}
     
 * Comienza con el tipo de datos que va a devolver la subrutina. Normalmente todas las subrutinas devuelven un valor de algún tipo (las llamamos **funciones**), pero si no se devuelve ningún dato (las llamamos **procedimientos**) y el tipo de dato es `void`.
@@ -76,7 +76,7 @@ Vamos a escribir un procedimiento que recibe una cadena de caracteres y lo muest
 	#include <iostream>
 	using namespace std;
 	void Subrayar(string cad);
-	
+
 	int main(int argc, char *argv[]) {
 		string nombre;
 		cout << "Dame un nombre:";
@@ -84,7 +84,7 @@ Vamos a escribir un procedimiento que recibe una cadena de caracteres y lo muest
 		Subrayar(nombre);
 		return 0;
 	}
-	
+
 	void Subrayar(string cad)
 	{
 		int i;
