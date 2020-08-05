@@ -18,18 +18,19 @@ Cuando en un puntero guardamos la dirección de memoria de una variable, se dice
 
 	#include <iostream>
 	using namespace std;
-	
+
 	int main(int argc, char *argv[]) {
 		int edad=10;
 		int *ptr; //Definimos un puntero a entero
-		
+
 		ptr = &edad; //Guardamos la dirección de memoria de la variable edad en el puntero
-		
+
 		cout << *ptr << endl; //Mostramos el contenido de la variable apuntada por el 	puntero
 		*ptr = 12; //Podemos cambiar el contenido de la variable apuntada por el puntero.
 		cout << edad << endl; //Comprobamos que la variable ha cambiado
 		return 0;
 	}
 
+Los punteros son una herramienta muy potente en c++ y nos aporta mucha flexibilidad a la hora de trabajar con variables. en este curso hemos hecho una introducción a los punteros, pero se puede profundizar mucho más en ellos. De las distintas funcionalidades que nos ofrecen los punteros, en este curso lo vamos a utilizar en las próximas unidades para trabajar con parámetros de entrada y salida en las funciones.
 
 **Nota: Las imágenes de esta unidad se han obtenido de: https://www.slideshare.net/CesarOsorio2/punteros-y-funciones**
