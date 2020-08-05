@@ -40,7 +40,7 @@ Por defecto el operador `>>` no es capaz de leer los espacios que podemos poner 
     string nombre;
   	cout << "Dime el nombre:";
     cin >> nombre;
-    cout >> nombre;
+    cout << nombre;
     ...
 
 Si introducimos por teclado "Pepe García", la salida del programa será "Pepe".
@@ -51,5 +51,22 @@ Por lo tanto para poder leer los espacios al leer cadenas de caracteres vamos a 
     string nombre;
    	cout << "Dime el nombre:";
     getline(cin,nombre);
-    cout >> nombre;
+    cout << nombre;
     ...
+
+En ocasiones cuando hemos leído con `cin >>`, la siguiente instrucción `getline` no lee nada por teclado, en realidad lo que pasa es que lee del buffer de entrada el carácter de retorno. Para evitar esto antes de usar la instrucción `getline` hay que borrar el buffer usando `cin.ignore()`, veamos un ejemplo:
+
+    #include <iostream>
+    using namespace std;
+    
+    int main(int argc, char *argv[]) {
+    
+    	int edad;
+    	string nombre;
+    	cout << "Introduce la edad:";
+    	cin >> edad;
+    	cout << "Introduce el nombre:";
+    	cin.ignore();
+    	getline(cin,nombre);
+    	return 0;
+    }

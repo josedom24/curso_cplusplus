@@ -58,7 +58,7 @@
 
 31. [Introducción a los punteros (I)](curso/u31)
 32. [Introducción a los punteros (II)](curso/u32)
-33. Tipos de datos complejos: estructuras
+33. [Tipos de datos complejos: estructuras](curso/u33)
 
 ## Programación estructurada
 
