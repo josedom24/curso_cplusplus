@@ -30,13 +30,14 @@ Tenemos dos operadores para trabajar sobre las variables:
 
 * `&`: Nos devuelve **la dirección de memoria** de una variable.
 * `*`: Nos devuelve **el contenido** de una determinada dirección de memoria.
+
 El operador `&` se ejecuta sobre una variable, el operador `*` se ejecuta sobre una dirección de memoria (por eso en la imagen vemos `*&`).
 
 Veamos un ejemplo:
 
-    
+
     using namespace std;
-    
+
     int main(int argc, char *argv[]) {
     	int edad=10;
     
