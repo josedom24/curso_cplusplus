@@ -41,8 +41,8 @@ Veamos un ejemplo:
     int main(int argc, char *argv[]) {
     	int edad=10;
     
-    	cout << &edad << endl; //Mostramos la dirección de memoria donde se guarda la   variable
-    	cout << *&edad << endl; //Mostramos el contenido de la variable guardada en esa     dirección 
+    	cout << &edad << endl; //Mostramos la dirección de memoria donde se guarda la variable
+    	cout << *&edad << endl; //Mostramos el contenido de la variable guardada en esa dirección 
     	*&edad = 12; //Podemos cambiar el contenido de la variable de esa dirección.
     	cout << edad << endl; //Comprobamos que la variable ha cambiado
     	return 0;
