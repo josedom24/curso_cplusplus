@@ -62,17 +62,18 @@
 
 ## Programación estructurada
 
-34. Introducción a las funciones
-35. Funciones recursivas
-36. [Ejercicios con funciones](curso/u36)
-37. [Más ejercicios](curso/u37)
+34. Programación estructurada
+35. Funciones y procedimientos
+36. Funciones recursivas
+37. [Ejercicios con funciones](curso/u367)
+38. [Más ejercicios](curso/u38)
 
 ## Programación orientada a objetos
 
-38. Introducción a la programación orientada a objetos
-39. Encapsulamiento en la programación orientada a objetos
-40. Herencia y delegación
-41. Ejercicios de programación orientada a objetos
+39. Introducción a la programación orientada a objetos
+40. Encapsulamiento en la programación orientada a objetos
+41. Herencia y delegación
+42. Ejercicios de programación orientada a objetos
 
 
 

@@ -1,84 +1,125 @@
-# Más Ejercicios
-
+# Ejercicios de funciones
 
 ### Ejercicio 1
 
-Realice un programa que pregunte aleatóriamente una multiplicación. El programa debe indicar si la respuesta ha sido correcta o no (en caso que la respuesta sea incorrecta el programa debe indicar cuál es la correcta). El programa preguntará 10 multiplicaciones,  y al finalizar mostrará el número de aciertos.
+Crea un procedimiento EscribirCentrado, que reciba como parámetro un texto y lo escriba centrado en pantalla (suponiendo una anchura de 80 columnas; pista: deberás escribir 40 - longitud/2 espacios antes del texto). Además subraya el mensaje utilizando el carácter `=`.
 
 ### Ejercicio 2
 
-El DNI (Documento Nacional de Identidad) en España está formada por 8 números y una letra. La letra nos sirve para verificar que el número es correcto, por lo tanto la letra se calcula a partir del número. Busca información de cómo se realiza el calculo y crea una función `CalcularLetra` que recibe un número y devuelva la letra que le corresponde.
-
-La función anterior la podemos utiliza para crear una nueva función `ValidarDNI` que recibe un DNI (cadena de caracteres con 8 números y una letra) que valida el DNI, es decir comprueba si la letra del DNI ces igual a la letra calculada a partir del número.
-
-Realiza un programa principal que lea un DNI y valide que es correcto (se debe comprobar también que tiene 9 caracteres).
+Crea un programa que pida dos número enteros al usuario y diga si alguno de ellos es múltiplo del otro. Crea una función EsMultiplo que reciba los dos números, y devuelve si el primero es múltiplo del segundo.
 
 ### Ejercicio 3
 
-Realizar una aplicación que recoja por teclado la cantidad total a pagar y la cantidad que se ha entregado. La aplicación debe calcular el cambio correspondiente con el menor número de monedas y/o billetes posibles.
-
+Crear una función que calcule la temperatura media de un día a partir de la temperatura máxima y mínima. Crear un programa principal, que utilizando la función anterior, vaya pidiendo la temperatura máxima y mínima de cada día y vaya mostrando la media. El programa pedirá el número de días que se van a introducir.
 
 ### Ejercicio 4
 
-Realizar un algoritmo que permita descomponer un número en sus factores primos.
+Crea un función "ConvertirEspaciado", que reciba como parámetro un texto y devuelve una cadena con un espacio adicional tras cada letra. Por ejemplo, "Hola, tú" devolverá "H o l a , t ú ". Crea un programa principal donde se use dicha función.
 
 ### Ejercicio 5
 
-Vamos a realizar dos funciones: una que nos permita convertir un número entero a binario, y otra que nos permita convertir un numero binario a decimal.
-
-* `ConvertirABinario`: Función que recibe un número entero y devuelve una cadena con la representación del número en binario.
-* `ConvertirADecimal`: Función que recibe una cadena con la representación binaria de un número y devuelve el número en decimal.
-
-Crea un programa principal que permita convertir de decimal a binario y de binario a decimal.
+Crea una función "calcularMaxMin" que recibe una arreglo con valores numérico y devuelve el valor máximo y el mínimo. Crea un programa que pida números por teclado y muestre el máximo y el mínimo, utilizando la función anterior.
 
 ### Ejercicio 6
 
-Crear un programa que convierta un número entero (mayor que 1 y menor o igual que 1000) a número romano.
+Diseñar una función que calcule el área y el perímetro de una circunferencia. Utiliza dicha función en un programa principal que lea el radio de una circunferencia y muestre su área y perímetro.
 
 ### Ejercicio 7
 
-Diseñar un programa que permita adivinar al ordenador un determinado número entero y positivo para lo cual se deben leer los límites en los que está comprendido dicho número. El programa deberá ir mostrando números que recibirán las siguientes respuestas:
-1. 'S', si es correcto.
-2. 'A', si es más alto que el número a adivinar.
-3. 'B', si es más bajo.
-Al finalizar el programa, se deberá escribir el número de intentos realizados para acertar el número.
+Crear una subrutina llamada "Login", que recibe un nombre de usuario y una contraseña y te devuelve Verdadero si el nombre de usuario es "usuario1" y la contraseña es "asdasd". Además recibe el número de intentos que se ha intentado hacer login y si no se ha podido hacer login incremente este valor.
 
+Crear un programa principal donde se pida un nombre de usuario y una contraseña y se intente hacer login, solamente tenemos tres oportunidades para intentarlo.
 
 ### Ejercicio 8
-Realizar un programa que pida un mes y un año (superior a 1900) y muestre el calendario del mes de esta manera:
-	
-	 L   M   M   J   V   S   D
-	==========================
-	     1   2   3   4   5   6
-	 7   8   9  10  11  12  13
-	14  15  16  17  18  19  20
-	21  22  23  24  25  26  27
-	28  29  30  31
 
-Para ello es necesario averiguar que día de la semana (Lunes, Martes, ...) corresponde con un fecha determinada. Hay muchas maneras de calcularlo: nosotros vamos a contar los días que han trascurridos desde el año 1900 (podemos hacer uso de funciones que hemos utilizado en ejercicios anteriores), y una vez calculado le hacemos el módulo  7 y el número obtenido será el da de la semana (0: domingo, 1: lunes, ...) (NOTA: ten en cuanta que queremos realizar un calendario que empiece en lunes, no en domingo).
+Crear una función recursiva que permita calcular el factorial de un número. Realiza un programa principal donde se lea un entero y se muestre el resultado del factorial.
 
 ### Ejercicio 9
 
-Vamos a programar el juego "Mastermind", para ello el programa debe "eligir" un número de cuatro cifras (sin cifras repetidas), que será el código que el jugador debe adivinar en la menor cantidad de intentos posibles. Cada intento consiste en una propuesta de un código posible que escribe el jugador, y una respuesta del programa. Las respuestas le darán pistas al jugador para que pueda deducir el código.
+Crear una función que calcule el MCD de dos número por el método de Euclides. El método de Euclides es el siguiente:
 
-* Número de "MUERTOS": Es la cantidad de dígitos que están en el número secreto y en la misma posición,
-* Número de "HERIDOS:" Es la cantidad de dígitos que están en el número secreto pero no en la misma posición.
+* Se divide el número mayor entre el menor.
+* Si la división es exacta, el divisor es el MCD.
+* Si la división no es exacta, dividimos el divisor entre el resto obtenido y se continúa de esta forma hasta obtener una división exacta, siendo el último divisor el MCD.
 
-Por ejemplo, si el código que eligió el programa es el 2607, y el jugador propone el 1406, el programa le debe responder un MUERTO (el 0, que está en el código original en el mismo lugar, el tercero), y un HERIDO (el 6, que también está en el código original, pero en la segunda posición, no en el cuarto como fue propuesto). 
+Crea un programa principal que lea dos números enteros y muestre el MCD.
 
 ### Ejercicio 10
 
-Escribe un programa para jugar al ahorcado.
+Escribir dos funciones que permitan calcular:
 
-* Un jugador introduce una palabra secreta y otro jugador tratará de adivinarla.
-* Aparecerá la palabra oculta (se mostrará un conjunto de asteriscos con la longitud de la palabra que hay que adivinar).
-* El programa te va pidiendo letras.
-* Si la letra está en la palabra, se mostrar la palabra mostrando las letras acertadas y los asteriscos en las letras que faltan por averiguar.
-* Cada vez que se introduce una letra se muestra las letras que has introducido anteriormente.
-* Si la letra no se encuentra en la palabra se suma un fallo. Según el número de fallos se mostrará el dibujo del ahorcado cada vez ms completo. 
-* Si introduces todas las letras de la palabra has ganada y te mostrará el número de intentos que has necesitado.
-* Si produces 6 fallos, habrás perdido y se mostrará el dibujo del ahorcado completo.
+* La cantidad de segundos en un tiempo dado en horas, minutos y segundos.
+* La cantidad de horas, minutos y segundos de un tiempo dado en segundos.
+
+Escribe un programa principal con un menú donde se pueda elegir la opción de convertir a segundos, convertir a horas,minutos y segundos o salir del programa.
+
+### Ejercicio 11
+
+El día juliano correspondiente a una fecha es un número entero que indica los días que han transcurrido desde el 1 de enero del año indicado. Queremos crear un programa principal que al introducir una fecha nos diga el día juliano que corresponde. Para ello podemos hacer las siguientes subrutinas:
+
+* `LeerFecha`: Nos permite leer por teclado una fecha (día, mes y año).
+* `DiasDelMes`: Recibe un mes y un año y nos dice los días de ese mes en ese año.
+* `EsBisiesto`: Recibe un año y nos dice si es bisiesto.
+* `Calcular_Dia_Juliano`: recibe una fecha y nos devuelve el día juliano.
+
+
+### Ejercicio 12
+
+Vamos a mejorar el ejercicio anterior haciendo una función para validar la fecha. De tal forma que al leer una fecha se asegura que es válida.
+
+### Ejercicio 13
+
+Queremos crear un programa que trabaje con fracciones a/b. Para representar una fracción vamos a utilizar dos enteros: `numerador` y `denominador`.
+
+Vamos a crear las siguientes funciones para trabajar con funciones:
+
+* `Leer_fracción`: La tarea de esta función es leer por teclado el numerador y el denominador. Cuando leas una fracción debes simplificarla.
+* `Escribir_fracción`: Esta función escribe en pantalla la fracción. Si el dominador es 1, se muestra sólo el numerador.
+* `Calcular_mcd`:  Esta función recibe dos número y devuelve el máximo común divisor.
+* `Simplificar_fracción`: Esta función simplifica la fracción, para ello hay que dividir numerador y dominador por el MCD del numerador y denominador. 
+* `Sumar_fracciones`: Función que recibe dos funciones n1/d1 y n2/d2, y calcula la suma de las dos fracciones. La suma de dos fracciones es otra fracción cuyo `numerador=n1*d2+d1*n2` y `denominador=d1*d2`. Se debe simplificar la fracción resultado.
+* `Restar_fracciones`: Función que resta dos fracciones:  `numerador=n1*d2-d1*n2` y `denominador=d1*d2`. Se debe simplificar la fracción resultado.
+* `Multiplicar_fracciones`: Función que recibe dos fracciones y calcula el producto, para ello `numerador=n1*n2` y `denominador=d1*d2`. Se debe simplificar la fracción resultado.
+* `Dividir_fracciones`: Función que recibe dos fracciones y calcula el cociente, para ello `numerador=n1*d2` y `denominador=d1*n2`. Se debe simplificar la fracción resultado.
+
+Crear un programa que utilizando las funciones anteriores muestre el siguiente menú:
+
+1. Sumar dos fracciones: En esta opción se piden dos fracciones y se muestra el resultado.
+2. Restar dos fracciones: En esta opción se piden dos fracciones y se muestra la resta.
+3. Multiplicar dos fracciones: En esta opción se piden dos fracciones y se muestra la producto.
+4. Dividir dos fracciones: En esta opción se piden dos fracciones y se muestra la cociente.
+5. Salir
+
+### Ejercicio 14
+
+Vamos a crear un programa para trabajar con una pila. Una pila es una estructura de datos que nos permite guardar un conjunto de variables. La característica fundamental es que el último elemento que se añade al conjunto es el primero que se puede sacar.
+
+Para representar una pila vamos a utilizar un arreglo (vector) de cadena de caracteres con tamaño 10, por lo tanto la pila no podrá tener más de 10 elementos.
+
+Vamos a crear varias funciones para trabajar con la pila:
+
+* `IncializarPila`: Como tenemos un arreglo de 10 elementos de cadenas tenemos que inicializarlo e introducir un carácter (por ejemplo un `*` que indique que ese elemento del arreglo no corresponde con un dato de la pila. Esta función inicializa el vector con ese carácter.
+* `LongitudPila`: Función que recibe una pila y devuelve el número de elementos que tiene.
+* `EstaVaciaPila`: Función que recibe una pila y que devuelve si la pila está vacía, no tiene elementos.
+* `EstaLlenaPila`: Función que recibe una pila y que devuelve si la pila está llena.
+* `AddPila`: función que recibe una cadena de caracteres y una pila, y añade la cadena a la pila, si no está llena. si esta llena muestra un mensaje de error.
+* `SacarDeLaPila`: Función que recibe una pila y devuelve el último elemento añadido y lo borra de la pila. Si la pila está vacía muestra un mensaje de error.
+* `EscribirPila`: Función que recibe una pila y muestra en pantalla los elementos de la pila.
+
+Realiza un programa principal que nos permita usar las funciones anterior, que nos muestre un menú, con las siguientes opciones:
+
+1. Añadir elemento a la pila
+2. Sacar elemento de la pila
+3. Longitud de la pila
+4. Mostrar pila
+5. Salir
+
+### Ejercicio 15
+
+Vamos a realizar un programa similar al anterior para trabajar con una cola. Una cola es una estructura de datos que nos permite guardar un conjunto de variables. La característica fundamental es que el primer elemento que se añade al conjunto es el primero que se puede sacar.
+
+En realizada nos sirven todas las funciones del ejercicio anterior menos la función `SacarDeLaCola` que es la que tienes que modificar.
 
 # Ejercicios resueltos
 
-[Más ejercicios](../../ejercicios/mas_ejercicios)
+[Ejercicios de funciones](../../ejercicios/funciones)
