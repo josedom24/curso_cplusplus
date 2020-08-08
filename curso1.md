@@ -1,4 +1,4 @@
-# Curso: Introducción a la programación con C++: ¿Qué es C++?
+# Curso 1: Curso de C++: Introducción a C++
 
 * Presentación del curso
 

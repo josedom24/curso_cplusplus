@@ -1,4 +1,4 @@
-# Curso 3: Introducción a la programación con C++: Programación estructurada y orientación a objetos en C++
+# Curso 3: Curso de C++: Programación estructurada y orientación a objetos
 
 * Presentación del curso
 

@@ -1,4 +1,4 @@
-# Curso 2: Introducción a la programación con C++: Escribiendo programas con C++
+# Curso 2: Curso de C++: Estructuras de control y tipos de datos
 
 * Presentación del curso
 
