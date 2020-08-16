@@ -13,7 +13,7 @@
 
 4. [Instalación del IDE Zinjai](curso/u04)
 5. [Estructura del programa](curso/u05)
-6. Compilación y ejecución de programas
+6. [Compilación y ejecución de programas](curso/u06)
 
 ## Tipos de datos básicos
 
