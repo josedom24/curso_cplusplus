@@ -11,7 +11,7 @@
 
 ## Introducción a C++
 
-4. Instalación del IDE Zinjai (http://zinjai.sourceforge.net/)
+4. [Instalación del IDE Zinjai](curso/u04)
 5. [Estructura del programa](curso/u05)
 6. Compilación y ejecución de programas
 
