@@ -4,9 +4,9 @@
 
 ## Introducción a la programación
 
-1. Análisis de problemas y diseño de algoritmos
-2. Introducción a los lenguajes de programación
-3. Introducción a C++
+1. [Análisis de problemas y diseño de algoritmos](curso/u01)
+2. [Introducción a los lenguajes de programación](curso/u02)
+3. [Introducción a C++](curso/u03)
 
 ## Introducción a C++
 
