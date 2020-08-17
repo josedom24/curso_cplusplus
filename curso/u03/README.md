@@ -10,7 +10,7 @@
 
 * C++ es un lenguaje de programación compilado. Utilizaremos un compilador que convertirá nuestro programa (código fuente) en un programa ejecutable. Existen compiladores de C++ para las distintas plataformas y sistemas operativos.
 
-* Para escribir un programa en C++ necesitamos un editor de texto (para escribir el código fuente) y un compilador para la plataforma y sistema operativo que estemos utilizando. Normalmente estas herramientas se unifican en los Entornos Integrados de Desarrollo (IDE) que son aplicaciones que nos ofrecen en un mismo progrma distintas funcionalidades (editor de texto, compilador,...).
+* Para escribir un programa en C++ necesitamos un editor de texto (para escribir el código fuente) y un compilador para la plataforma y sistema operativo que estemos utilizando. Normalmente estas herramientas se unifican en los Entornos Integrados de Desarrollo (IDE) que son aplicaciones que nos ofrecen en un mismo programa distintas funcionalidades (editor de texto, compilador,...).
 
 * Algunos ejemplos de IDE que podemos usar: Visual Studio Code, Dev-C++, Visual C++, Zinjai, Eclipse, ...
 
