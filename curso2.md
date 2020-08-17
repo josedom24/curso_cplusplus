@@ -1,6 +1,6 @@
 # Curso 2: Curso de C++: Estructuras de control y tipos de datos
 
-* Presentación del curso
+* [Presentación del curso](curso/pdf/presentacion2.pdf)
 
 ## Estructuras alternativas
 

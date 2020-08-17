@@ -1,6 +1,6 @@
 # Curso 3: Curso de C++: Programación estructurada y orientación a objetos
 
-* Presentación del curso
+* [Presentación del curso](curso/pdf/presentacion3.pdf)
 
 ## Punteros y estructuras
 

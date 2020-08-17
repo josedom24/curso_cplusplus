@@ -1,7 +1,5 @@
 # Curso: Introducción a la programación con C++
 
-* Presentación del curso    
-
 ## Introducción a la programación
 
 1. [Análisis de problemas y diseño de algoritmos](curso/u01)
