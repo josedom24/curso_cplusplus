@@ -1,6 +1,6 @@
 # Curso: Introducción a la programación con C++
 
-* Presentación del curso
+* Presentación del curso    
 
 ## Introducción a la programación
 
