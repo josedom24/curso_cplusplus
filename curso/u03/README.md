@@ -14,7 +14,7 @@
 
 * Algunos ejemplos de IDE que podemos usar: Visual Studio Code, Dev-C++, Visual C++, Zinjai, Eclipse, ...
 
-* Durante los últimos años se han estandarizados distintas versiones de C++ donde se han ido añadiendo nuevas funcionalidades al lenguaje. Estas versiones se nombrarn con el año en que son publicadas, de esta manera tenemos: C++98, C++03, C++11, C++14, C++17 (versión estable actual), C++20 (versión en desarrollo).
+* Durante los últimos años se han estandarizados distintas versiones de C++ donde se han ido añadiendo nuevas funcionalidades al lenguaje. Estas versiones se nombran con el año en que son publicadas, de esta manera tenemos: C++98, C++03, C++11, C++14, C++17 (versión estable actual), C++20 (versión en desarrollo).
 
 * Podemos indicar como características fundamentales de C++:
 
