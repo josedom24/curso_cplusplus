@@ -17,6 +17,7 @@ int main(int argc, char *argv[]) {
 	EscribirCentrado(mensaje1);
 	mensaje2 = "Otro mensaje";
 	EscribirCentrado(mensaje2);
+	return 0;
 }
 
 void EscribirCentrado(string cad)
@@ -31,6 +32,6 @@ void EscribirCentrado(string cad)
 	for(i=0;i< cad.size() ;i++)
 		cout << "=";
 	cout << endl;	
-	return 0;
+	
 }
 

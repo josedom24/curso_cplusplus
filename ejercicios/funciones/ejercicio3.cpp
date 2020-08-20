@@ -23,6 +23,7 @@ int main(int argc, char *argv[]) {
 		cin >> tmax;
 		cout << "Temperatura media: " << calcularTemperaturaMedia(tmin,tmax) << endl;
 	}
+	return 0;
 }
 
 
