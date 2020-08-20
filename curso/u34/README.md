@@ -92,3 +92,5 @@ Vamos a escribir un procedimiento que recibe una cadena de caracteres y lo muest
 		for (i=0;i<cad.size();i++)
 			cout << "-";
 	}
+
+**NOTA:** Para simplificar la terminología solemos hablar siempre de funciones, aunque sean procedimientos.Es decir, un procedimiento es una función que no devuelve ningún valor.

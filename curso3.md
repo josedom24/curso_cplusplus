@@ -11,7 +11,7 @@
 ## Programación estructurada
 
 4. [Programación estructurada](curso/u34)
-5. Funciones y procedimientos
+5. [Funciones y procedimientos](curso/u35)
 6. Funciones recursivas
 7. [Ejercicios con funciones](curso/u37)
 8. [Más ejercicios](curso/u38)
