@@ -26,6 +26,20 @@ Partimos del ejemplo anterior de función:
 			return num2;
 	}
 
+## Devolución de resultados
+
+Cuando la función finaliza hemos dicho que se devuelve un valor (Recuerda que los procedimientos no devuelven valor). Para devolver un valor usamos la instrucción `return` seguida del valor a devolver. Una función puede tener varias instrucciones `return`, cuando se ejecuta una se devuelve el valor y se termina la ejecución de la función.
+
+## Llamada a la función
+
+Para llamar a una función se debe utilizar su nombre y entre paréntesis los parámetros reales que se mandan. La llamada a una función se puede considerar una expresión cuyo valor y tipo es el retornado por la función. Evidentemente si estamos llamando un procedimiento, la llamada no tendrá ningún tipo.
+
+Ejemplos de llamadas:
+
+	num1 = CalcularMaximo(5,6);
+	cout << CalcularMaximo(1,2);
+	...
+
 ## Ámbito de variables
 
 Las variables definidas en la función no existen en otras funciones o el programa principal. Igualmente las variables del programa principal no existen en la función.
@@ -71,14 +85,14 @@ Veamos ahora el mismo programa pero pasando el parámetro por referencia.
 	#include <iostream>
 	using namespace std;
 	void PasoPorReferencia(int *num);
-	
+
 	int main(int argc, char *argv[]) {
 		int numero1=5;
 		PasoPorReferencia(&numero1);
 		cout << numero1 << endl;
 		return 0;
 	}
-	
+
 	void PasoPorReferencia(int *num)
 	{
 		*num = *num + 1;
@@ -88,16 +102,4 @@ Veamos ahora el mismo programa pero pasando el parámetro por referencia.
 
 El resultado será 6 y 6. Hemos modificado el parámetro formal y se modificado el real.
 
-## Devolución de resultados
 
-Cuando la función finaliza hemos dicho que se devuelve un valor (Recuerda que los procedimientos no devuelven valor). Para devolver un valor usamos la instrucción `return` seguida del valor a devolver. Una función puede tener varias instrucciones `return`, cuando se ejecuta una se devuelve el valor y se termina la ejecución de la función.
-
-## Llamada a la función
-
-Para llamar a una función se debe utilizar su nombre y entre paréntesis los parámetros reales que se mandan. La llamada a una función se puede considerar una expresión cuyo valor y tipo es el retornado por la función. Evidentemente si estamos llamando un procedimiento, la llamada no tendrá ningún tipo.
-
-Ejemplos de llamadas:
-
-	num1 = CalcularMaximo(5,6);
-	cout << CalcularMaximo(1,2);
-	...
