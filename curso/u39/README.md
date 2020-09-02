@@ -38,8 +38,8 @@ Por último para acceder a los miembros de un objeto una vez declarado vamos a u
 
 Veamos un ejemplo donde vamos a crear una clase para guardar la información de un *Punto*. Tendrá dos atributos para guardar el valor de la coordenada x e y. Además tendrá un método para mostrar la información del punto:
 
-#include <iostream>
-using namespace std;
+	#include <iostream>
+	using namespace std;
 
 	class Punto
 	{
