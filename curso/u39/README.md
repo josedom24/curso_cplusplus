@@ -77,65 +77,71 @@ Como podemos ver al ser los miembros (atributos y métodos) públicos podemos mo
 
 	punto1.x=4;
 	punto1.y=8;
+	...
 	punto1.mostrar();
 
+Y podemos obtener los valores de los atributos:
+
+	cout << punto1.x << endl;
 
 ## Constructores
 
+¿Qué valores tienen los atributos al crear un objeto? C++ no permite inicializar los valores de los atributos de forma automática cuando declaramos un objeto, para ello vamos a usar unos métodos especiales que llamamos **constructores**.Los constructores son métodos que se deben llamar igual que la clase y sin tipo de valor de retorno. Además como una de las características de la Programación Orientada a Objetos es la sobrecarga de funciones, podemos tener varias funciones asociadas o métodos que se llamen igual pero que reciban diferentes cantidad de parámetros o de diferentes tipos.
+
+Veamos otro ejemplo donde hemos introducido dos constructores y otro método que nos devuelve la distancia a otro punto:
+
+	#include <iostream>
+	#include <cmath>
+	using namespace std;
+
+	class Punto
+	{
+		//Atributos
+		public:
+			float x;
+			float y;
+
+		//Métodos
+		Punto();
+		Punto(float nx, float ny);
+		void mostrar();
+		float distancia(Punto otro);
+	};	
+
+	Punto::Punto()
+	{
+		x=0;
+		y=0;
+	}
+	Punto::Punto(float nx, float ny)
+	{
+		x=nx;
+		y=ny;
+	}
+	void Punto::mostrar()
+	{
+		cout << x << "-" << y;
+	}
+	float Punto::distancia(Punto otro)
+	{
+		float dx, dy;
+		dx = x - otro.x;
+		dy = y - otro.y;
+		return sqrt(dx*dx + dy*dy);
+	}
 
 
+	int main(int argc, char *argv[]) {
 
+		Punto punto1;
+		Punto punto2(4,5);
+		punto1.mostrar();
+		cout << endl;
+		punto2.mostrar();
+		cout << endl;
+		cout << punto1.distancia(punto2);
 
-#include <iostream>
-#include <cmath>
-using namespace std;
+		return 0;
+	}
 
-class Punto
-{
-	//Atributos
-	public:
-		float x;
-		float y;
-	
-	//Métodos
-	Punto();
-	Punto(float nx, float ny);
-	void mostrar();
-	float distancia(Punto otro);
-};	
-		
-Punto::Punto()
-{
-	x=0;
-	y=0;
-}
-Punto::Punto(float nx, float ny)
-{
-	x=nx;
-	y=ny;
-}
-void Punto::mostrar()
-{
-	cout << x << "-" << y;
-}
-float Punto::distancia(Punto otro)
-{
-	float dx, dy;
-	dx = x - otro.x;
-	dy = y - otro.y;
-	return sqrt(dx*dx + dy*dy);
-}
-	
-
-int main(int argc, char *argv[]) {
-	
-	Punto punto1;
-	Punto punto2(4,5);
-	punto1.mostrar();
-	cout << endl;
-	punto2.mostrar();
-	cout << endl;
-	cout << punto1.distancia(punto2);
-		
-	return 0;
-}
+Al declarar el objeto `punto1` se utiliza el primer constructor e incializa los dos atributos a 0, sin embargo al crear el objeto `punto2` hemos usado el segundo constructor donde los atributos se inicializan con los valores de los parámetros que recibe.
