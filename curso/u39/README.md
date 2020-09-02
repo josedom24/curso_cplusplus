@@ -6,7 +6,7 @@ La Programación Orientado a Objetos (POO) se basa en la agrupación de objetos 
 ## Definición de clase, objeto, atributos y métodos
 
 * Llamamos **clase** a la representación abstracta de un concepto. Por ejemplo, "perro", "número entero" o "servidor web".
-* Las clases se componen de miembros.
+* Las clases se componen de **miembros**.
 * Los miembros de una clase pueden ser de dos tipos: **atributos** y **funciones asociadas** o **métodos**.
 * Los miembros de una clase pueden ser públicos o privados. 
 * Un **objeto** es cada una de las instancias de una clase. Es decir las variables de este tipo de datos que es la clase llamamos **objeto**.
