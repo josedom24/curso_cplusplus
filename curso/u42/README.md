@@ -6,7 +6,7 @@ Vamos a crear una clase llamada `Persona`. Sus atributos son: **nombre**, **edad
 
 * Un constructor, donde los datos pueden estar vacíos.
 * Los métodos de acceso (set,get) para cada uno de los atributos. Hay que validar las entradas de datos.
-* `mostrar()`: Muestra los datos de la persona.
+* `mostrar()`: Devuelve los datos de la persona.
 * `esMayorDeEdad()`: Devuelve un valor lógico indicando si es mayor de edad.
 
 ## Ejercicio 2
@@ -15,7 +15,7 @@ Crea una clase llamada `Cuenta` que tendrá los siguientes atributos: titular (q
 
 * Un constructor, donde los datos pueden estar vacíos.
 * Los métodos de acceso (set,get) para cada uno de los atributos. El atributo no se puede modificar directamente, sólo ingresando o retirando dinero.
-* `mostrar()`: Muestra los datos de la cuenta.
+* `mostrar()`: Devuelve los datos de la cuenta.
 * `ingresar(cantidad)`: se ingresa una cantidad a la cuenta, si la cantidad introducida es negativa, no se hará nada.
 * `retirar(cantidad)`: se retira una cantidad a la cuenta. La cuenta puede estar en números rojos.
 
