@@ -25,7 +25,7 @@ Para definir una clase usamos la siguiente sintaxis:
 
 Se puede usar la etiqueta `private:` para indicar los miembros privados, por defecto las declaraciones de una clase son privadas. En esta unidad vamos a trabajar con miembros públicos, en la siguiente unidad introduciremos los miembros privados.
 
-Para declarar los método o funciones asociadas lo podemos hacer dentro de la declaración de la función o declarando sólo el prototipo de la función e implementando la función fuera de la declaración de la clase. Está última alternativa es la que vamos a usar, y para ello es necesario cualificar el nombre de la misma con el nombre de la clase utilizando la sintaxis: `<clase>::<función>`.
+Para declarar los método o funciones asociadas lo podemos hacer dentro de la declaración de la clase o declarando sólo el prototipo de la función e implementando la función fuera de la declaración de la clase. Está última alternativa es la que vamos a usar, y para ello es necesario cualificar el nombre de la misma con el nombre de la clase utilizando la sintaxis: `<clase>::<función>`.
 
 Para declarar un objeto usamos la siguiente forma de declaración:
 
@@ -144,4 +144,4 @@ Veamos otro ejemplo donde hemos introducido dos constructores y otro método que
 		return 0;
 	}
 
-Al declarar el objeto `punto1` se utiliza el primer constructor e incializa los dos atributos a 0, sin embargo al crear el objeto `punto2` hemos usado el segundo constructor donde los atributos se inicializan con los valores de los parámetros que recibe.
+Al declarar el objeto `punto1` se utiliza el primer constructor e inicializa los dos atributos a 0, sin embargo al crear el objeto `punto2` hemos usado el segundo constructor donde los atributos se inicializan con los valores de los parámetros que recibe.

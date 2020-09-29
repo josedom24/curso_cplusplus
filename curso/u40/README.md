@@ -6,7 +6,7 @@ En la unidad anterior terminamos viendo que teníamos la posibilidad de cambiar 
 
 Tanto los atributos como los métodos pueden ser públicos o privados. En el caso de los atributos para conseguir el encapsulamiento lo definimos como privados y nos se podrán acceder o modificar a sus valores directamente, tendremos que usar métodos para modificar sus valores o para obtener sus valores. De esta manera tendremos el control del valor que pueden tomar los atributos.
 
-Del mismo modo podemos tener métodos privados. si un método es privao no se podrá usar directamente desde el objeto pero si podrá ser usado desde otro método de la clase.
+Del mismo modo podemos tener métodos privados. si un método es privado no se podrá usar directamente desde el objeto pero si podrá ser usado desde otro método de la clase.
 
 Veamos el ejemplo de la clase `Punto` con los atributos privados y métodos de lectura y escritura para cada atributo. Además vamos asegurarnos que nuestros puntos están en el primer cuadrante, es decir el valor de la x y de la y deben ser positivo:
 
