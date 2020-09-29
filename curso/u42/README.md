@@ -4,6 +4,7 @@
 
 Vamos a crear una clase llamada `Persona`. Sus atributos son: **nombre**, **edad** y **DNI**. Construye los siguientes métodos para la clase:
 
+* El constructor por defecto.
 * Un constructor, que reciba los parámetros para inicializar los atributos.
 * Los métodos de acceso (set,get) para cada uno de los atributos. Hay que validar las entradas de datos.
 * `mostrar()`: Devuelve los datos de la persona.

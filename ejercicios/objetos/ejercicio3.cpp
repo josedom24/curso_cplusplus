@@ -149,7 +149,7 @@ void Cuenta::set_titular(Persona nt)
 
 string Cuenta::mostrar()
 {
-	return "Titular: " + titular.mostrar() + " - Cantidad: " + to_string(cantidad);
+	return "Nombre:"+titular.get_nombre()+ " - Edad:"+ to_string(titular.get_edad())+ " - DNI:" + titular.get_dni() + " - Cantidad: " + to_string(cantidad);
 }
 
 void Cuenta::ingresar(float ncantidad)
@@ -162,16 +162,57 @@ void Cuenta::retirar(float ncantidad)
 	if (ncantidad>0) cantidad=cantidad-ncantidad;
 }	
 
+// Ejercicio 3
+
+class CuentaJoven: public Cuenta
+{
+	int bonificacion;
+	bool esTitularValido();
+public:
+	CuentaJoven(Persona nt,float nc,int nb);
+	float get_bonificacion();
+	void set_bonificacion(int nb);
+	string mostrar();
+	void retirar(float ncantidad);
+};
+
+CuentaJoven::CuentaJoven(Persona nt,float nc,int nb):Cuenta(nt,nc)
+{
+	bonificacion=nb;
+}
+
+string CuentaJoven::mostrar()
+{
+	return "CUENTA JOVEN\n Titular: "+titular.mostrar() + " - Cantidad: " + to_string(cantidad) + " - Bonificación: " + to_string(bonificacion);
+}
+
+bool CuentaJoven::esTitularValido()
+{
+	return (titular.get_edad() < 25 && titular.esMayorDeEdad());
+}
+
+void CuentaJoven::retirar(float ncantidad)
+{
+	if(!esTitularValido())
+		cout << "No puedes retirar dineo. Titular no válido" << endl;
+	else
+		cantidad = cantidad - ncantidad;
+	
+}
+
 int main(int argc, char *argv[]) {
 	Persona yo("José Domingo",40,"12345678X");
-	Cuenta micuenta(yo,1000);
-	cout << micuenta.mostrar()<<endl;
+	CuentaJoven micuenta(yo,100,10);
+	cout << micuenta.get_cantidad() << endl;
+	cout << micuenta.mostrar() << endl;
+	micuenta.ingresar(50);
+	micuenta.retirar(10);
+	
 	Persona otro;
 	otro=micuenta.get_titular();
-	otro.set_nombre("Pepe");
+	otro.set_edad(19);
 	micuenta.set_titular(otro);
-	micuenta.ingresar(500);
-	cout << micuenta.mostrar()<<endl;
 	
-	
+	micuenta.retirar(10);
+	cout << micuenta.mostrar() << endl;
 }

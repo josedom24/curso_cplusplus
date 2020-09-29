@@ -16,6 +16,13 @@ La sintaxis para realizar una herencia simple sería:
         ...
     }
 
+Por ejemplo:
+
+    class Punto3d: public Punto
+    {
+        ...
+    }
+
 Vemos que la clase base la podemos definir con dos tipos de acceso:
 
 * `public`: los miembros heredados de la clase base conservan el tipo de acceso con que fueron declarados en ella.
