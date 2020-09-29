@@ -69,8 +69,8 @@
 
 39. [Introducción a la programación orientada a objetos](curso/u39)
 40. [Encapsulamiento en la programación orientada a objetos](curso/u40)
-41. Herencia y delegación
-42. Ejercicios de programación orientada a objetos
+41. [Herencia y delegación](curso/u41)
+42. [Ejercicios de programación orientada a objetos](curso/u42)
 
 
 
