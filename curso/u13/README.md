@@ -136,7 +136,7 @@ En pseudocódigo:
 
     cadena <- Mayusculas(cadena)
 
-En C++ podemos convertir a mayúsculas un caracter:
+En C++ podemos convertir a mayúsculas un carácter:
 
     char cadena = 'a';
     cadena = toupper(cadena)

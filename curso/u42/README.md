@@ -4,7 +4,7 @@
 
 Vamos a crear una clase llamada `Persona`. Sus atributos son: **nombre**, **edad** y **DNI**. Construye los siguientes métodos para la clase:
 
-* Un constructor, donde los datos pueden estar vacíos.
+* Un constructor, que reciba los parámetros para inicializar los atributos.
 * Los métodos de acceso (set,get) para cada uno de los atributos. Hay que validar las entradas de datos.
 * `mostrar()`: Devuelve los datos de la persona.
 * `esMayorDeEdad()`: Devuelve un valor lógico indicando si es mayor de edad.
@@ -13,7 +13,7 @@ Vamos a crear una clase llamada `Persona`. Sus atributos son: **nombre**, **edad
 
 Crea una clase llamada `Cuenta` que tendrá los siguientes atributos: titular (que es una persona) y cantidad (puede tener decimales). El titular será obligatorio y la cantidad es opcional. Construye los siguientes métodos para la clase:
 
-* Un constructor, donde los datos pueden estar vacíos.
+* Un constructor, que reciba los parámetros para inicializar los atributos.
 * Los métodos de acceso (set,get) para cada uno de los atributos. El atributo no se puede modificar directamente, sólo ingresando o retirando dinero.
 * `mostrar()`: Devuelve los datos de la cuenta.
 * `ingresar(cantidad)`: se ingresa una cantidad a la cuenta, si la cantidad introducida es negativa, no se hará nada.

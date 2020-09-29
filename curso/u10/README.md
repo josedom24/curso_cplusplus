@@ -117,7 +117,7 @@ Veamos un ejemplo con el operador aritmético de división:
 
 ## Funciones matématicas
 
-En la libreria `cmath` tnemos distintas funciones matemática. Las más útiles que podemos usar en nuestros programas son:
+En la librería `cmath` tenemos distintas funciones matemática. Las más útiles que podemos usar en nuestros programas son:
 
 * `double pow(double, double);`: Realiza la potencia, la base es el primer parámetro y el exponente el segundo. Recibe datos de tipo `double` y devuelve también una valor `double`.
 * `double sqrt(double);`: Realiza la raíz cuadrada del parámetro `double` que recibe. Devuelve un valor `double.
