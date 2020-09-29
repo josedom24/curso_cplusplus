@@ -9,7 +9,7 @@ private:
 	string dni;
 	void validar_dni();
 public:
-	Paersona();
+	Persona();
 	Persona(string nnombre,int nedad,string ndni);
 	string get_nombre();
 	int get_edad();
@@ -27,7 +27,6 @@ Persona::Persona()
 	edad=0;
 	dni="";
 }
-
 Persona::Persona(string nnombre,int nedad,string ndni)
 {
 	nombre=nnombre;
@@ -107,12 +106,72 @@ bool Persona::esMayorDeEdad()
 	return(edad>18);
 }
 
+
+//// Ejercicio 2
+
+class Cuenta
+{
+protected:
+	Persona titular;
+	float cantidad;
+public:
+	Cuenta(Persona nt,float nc);
+	Persona get_titular();
+	float get_cantidad();
+	void set_titular(Persona nt);
+	string mostrar();
+	void ingresar(float ncantidad);
+	void retirar(float ncantidad);
+	
+};
+
+Cuenta::Cuenta(Persona nt,float nc)
+{
+	titular=nt;
+	cantidad=nc;
+}
+
+float Cuenta::get_cantidad()
+{
+	return cantidad;
+}
+
+Persona Cuenta::get_titular()
+{
+	return titular;
+}
+
+void Cuenta::set_titular(Persona nt)
+{
+	titular=nt;
+}
+
+
+string Cuenta::mostrar()
+{
+	return "Nombre:"+titular.get_nombre()+ " - Edad:"+ to_string(titular.get_edad())+ " - DNI:" + titular.get_dni() + " - Cantidad: " + to_string(cantidad);
+}
+
+void Cuenta::ingresar(float ncantidad)
+{
+	if (ncantidad>0) cantidad=cantidad+ncantidad;
+}
+
+void Cuenta::retirar(float ncantidad)
+{
+	if (ncantidad>0) cantidad=cantidad-ncantidad;
+}	
+
 int main(int argc, char *argv[]) {
 	Persona yo("José Domingo",40,"12345678X");
-	yo.set_dni("12345678W");
-	cout << yo.mostrar()<<endl;
-	if(yo.esMayorDeEdad())
-		cout << "Es mayor de edad" << endl;
-	//yo.validar_dni();
+	Cuenta micuenta(yo,1000);
+	cout << micuenta.mostrar()<<endl;
+	Persona otro;
+	otro=micuenta.get_titular();
+	otro.set_nombre("Pepe");
+	micuenta.set_titular(otro);
+	micuenta.ingresar(500);
+	cout << micuenta.mostrar()<<endl;
+	
 	
 }

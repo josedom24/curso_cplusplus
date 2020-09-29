@@ -9,7 +9,7 @@ protected:
 	float x;
 	float y;
 public:	
-	//Métodos
+	//Mï¿½todos
 	Punto();
 	Punto(float nx, float ny);
 	void mostrar();
@@ -70,59 +70,6 @@ float Punto::get_y()
 }
 
 
-//Clase Punto3d
-
-class Punto3d: public Punto
-{
-	float z;
-public:
-	Punto3d();
-	Punto3d(float nx,float ny, float nz);
-	void mostrar();
-	float distancia(Punto3d otro);
-	void set_z(float nz);
-	float get_z();
-	
-	
-};
-
-Punto3d::Punto3d()
-{
-	z=0;
-}
-
-Punto3d::Punto3d(float nx,float ny, float nz):Punto(nx,ny)
-{
-	z=nz;
-}
-
-void Punto3d::set_z(float nz)
-{
-	if (nz>=0)
-		z=nz;
-	else
-		z=0;
-}
-
-float Punto3d::get_z()
-{
-	return z;
-}
-
-void Punto3d::mostrar()
-{
-	cout << x << "-" << y << "-" << z;
-}
-
-float Punto3d::distancia(Punto3d otro)
-{
-	float dx, dy, dz;
-	dx = x - otro.x;
-	dy = y - otro.y;
-	dz = z - otro.z;
-	return sqrt(dx*dx + dy*dy + dx*dz);
-}
-
 //Circulo
 
 
@@ -132,7 +79,7 @@ public:
 	Punto centro;
 	float radio;
 	
-	//Métodos
+	//Mï¿½todos
 	Circulo(Punto nc,float nr);
 	void mostrar();
 };	
