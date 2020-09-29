@@ -44,7 +44,7 @@ Cuando queramos inicializar las clases base usando parámetros desde el construc
     {
         ...
     }
-Es decir, el constructor de la clase derivada recibe todos los parámetros y llama al constructor de la clase base envíando los parámetros adecuados para finalmente incializar los atributos que le son propio. Por ejemplo:
+Es decir, el constructor de la clase derivada recibe todos los parámetros y llama al constructor de la clase base envíando los parámetros adecuados para finalmente inicializar los atributos que le son propio. Por ejemplo:
 
     Punto3d::Punto3d(float nx,float ny, float nz):Punto(nx,ny)
     {   

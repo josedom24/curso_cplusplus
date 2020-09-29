@@ -13,12 +13,12 @@ Para poder usar una variable tenemos que declarar, la declaración consiste en i
     int variable3, variable4, variable5;
     int variable6=100, variable7=-10;
 
-Podemos declarar una variable y posteriormente incializarla (con el operador de asignación `=`).
+Podemos declarar una variable y posteriormente inicializarla (con el operador de asignación `=`).
 
     int variable8;
     variable8=1000;
 
-Si declaramos una variable y no la inicializamos tendrá un valor por defecto: la variables númericas tendrá un valor de `0` y los caracteres tendrán un valor de `\0`.
+Si declaramos una variable y no la inicializamos tendrá un valor por defecto: la variables numéricas tendrá un valor de `0` y los caracteres tendrán un valor de `\0`.
 
 Las variables hay que declararla antes de usarla, pero es muy recomendable declarar todas las variables al principio de l función (esto era obligatorio en el lenguaje C).
 

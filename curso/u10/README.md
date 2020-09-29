@@ -68,7 +68,7 @@ Al declarar variables podemos usar una notación corta para declarar enteros lar
     unsigned short var1;
     long var2;
 
-Podemos usar sufijos para indicar literales númericos largos (con el sufijo `L`) y sin signo (con el sufijo `U`). Por ejemplo:
+Podemos usar sufijos para indicar literales numéricos largos (con el sufijo `L`) y sin signo (con el sufijo `U`). Por ejemplo:
 
     var1=123U;
     var2=123L;
@@ -113,9 +113,9 @@ Veamos un ejemplo con el operador aritmético de división:
 * `%`: Módulo o resto de la división
 * `+`, `-`: Operadores unarios positivo y negativo
 * `++`: Operador de incremento. Suma uno a la variable, `i++` es lo mismo que `i=i+1`.
-* `--`: Operdor de decremento. Resta uno a la variable.
+* `--`: Operador de decremento. Resta uno a la variable.
 
-## Funciones matématicas
+## Funciones matemáticas
 
 En la librería `cmath` tenemos distintas funciones matemática. Las más útiles que podemos usar en nuestros programas son:
 

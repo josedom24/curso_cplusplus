@@ -23,7 +23,7 @@ En la librería `cstring` tenemos definidas varias funciones para trabajar con l
 * `strcpy(cad1, cad2)`: Copia la cadena cad2 en la cadena cad1.
 * `strcat(cad1, cad2)`: Concatena la cadena cad2 con la cadena cad1.
 * `strlen(cad1)`: Devuelve el tamaño de la cadena cad1;
-* `strcmp(cad1, cad2)`: compara cadenas. Devuelve 0 si cad1 y cad2 son iguales; un número menor que 0 si cad1<cad2; un número mayor que 0 si cad1>cad2.
+* `strcmp(cad1, cad2)`: compara cadenas. Devuelve 0 si cad1 y cad2 son iguales; un número menor que 0 si `cad1<cad2`; un número mayor que 0 si `cad1>cad2`.
 
 Veamos un ejemplo:
 

@@ -1,6 +1,6 @@
 # Tipos de datos complejos: estructuras
 
-El lenguaje C++ nos permite declarar nuevos tipos de datos. Las estrcutras nos permiten declarar nuevos tipos de datos complejos.
+El lenguaje C++ nos permite declarar nuevos tipos de datos. Las estructuras nos permiten declarar nuevos tipos de datos complejos.
 
 Una estructura es un conjunto de una o más variables, de distinto tipo, agrupadas bajo un mismo nombre para que su manejo sea más sencillo.
 

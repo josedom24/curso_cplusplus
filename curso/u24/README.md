@@ -9,7 +9,7 @@ En el apartado **Introducción a las cadenas de caracteres** estuvimos estudiand
 
 Vamos a profundizar en el uso de algunos métodos de clase de `string`.
 
-## Principales métodos de la calse string
+## Principales métodos de la clase string
 
 Vamos a ver los ejemplos a partir de esta cadena:
 

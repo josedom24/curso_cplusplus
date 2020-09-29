@@ -7,7 +7,7 @@ En C++ tenemos dos formas de trabajar con cadenas de caracteres:
 
 ## Usando la clase string
 
-Para declarar una variable de tipo cadena utilizamos el tipo de datos (que en este caso es una clase) `string`, además podemos inicializar las cadenas en la declariación, ejemplos:
+Para declarar una variable de tipo cadena utilizamos el tipo de datos (que en este caso es una clase) `string`, además podemos inicializar las cadenas en la declaración, ejemplos:
 
     string cadena1;
     string cadena2="Hola Mundo"

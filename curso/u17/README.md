@@ -22,7 +22,7 @@ La secuencia de instrucciones ejecutada por una instrucción `switch` depende de
 * Esta instrucción permite ejecutar opcionalmente varias acciones posibles, dependiendo del valor de una expresión.
 * La expresión que se utiliza en una instrucción switch debe ser un entero (`int` o `char`).
 * Un switch puede tener varios comparaciones `case` donde indicaremos el valor con el que se va a comparar, terminado por `:`. El valor debe ser del mismo tipo de la variable que hemos indicado en la instrucción `switch`.
-* En el momento que una comparación `case` se ejecutarán todas las instrucciones (includo de los `case` posteriores) hasta que se encuentre una instrucción `break`.
+* En el momento que una comparación `case` se ejecutarán todas las instrucciones (incluido los `case` posteriores) hasta que se encuentre una instrucción `break`.
 * Podemos indicar una opción por defecto `default`, que debe aparecer al final de la instrucción y que se ejecuta sin ninguna opción anterior se ha cumplido.
 
 

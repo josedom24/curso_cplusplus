@@ -26,7 +26,7 @@ El identificador `cout` representa la salida estándar (pantalla). El operador `
 
 ## Entrada por teclado
 
-El identificador `cin` representa la entrada estándar (teclado). El operador `>>` nos permite guardar la información que introducimos por teclado en una variable. El operador `>>``hace la conversión necesaria para guardar la información en la variable según del tipo que la hayamos declarado. Por ejemplo en la siguiente instrucción:
+El identificador `cin` representa la entrada estándar (teclado). El operador `>>` nos permite guardar la información que introducimos por teclado en una variable. El operador `>>` hace la conversión necesaria para guardar la información en la variable según del tipo que la hayamos declarado. Por ejemplo en la siguiente instrucción:
 
     cin >> edad;
 

@@ -31,6 +31,6 @@ Crea un programa que pida al usuario una contraseña, de forma repetitiva mientr
     			if (clave!=secreto) cout << "Clave incorrecta!!!" << endl;
     	} while(clave!=secreto);
     	cout << "Bienvenido!!!" << endl;
-    	cout << "Progama terminado";
+    	cout << "Programa terminado";
     	return 0;
     }

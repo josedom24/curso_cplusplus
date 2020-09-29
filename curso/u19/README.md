@@ -1,4 +1,5 @@
 # Estructuras repetitivas: while
+
 ![mientras](img/mientras.png)
 
 La instrucción `while` ejecuta una secuencia de instrucciones mientras una condición sea verdadera.
