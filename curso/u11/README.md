@@ -21,12 +21,12 @@ Los caracteres que forman una cadena se pueden referenciar por un indice (un nú
 
 El método `length` o `size` nos devuelve el número de caracteres de una cadena, por ejemplo:
 
-    cout << nombre2.length();
+    cout << cadena2.length();
     10
 
 Por lo tanto para mostrar el último carácter de la cadena (que está en la posición 9):
 
-    cout << nombre2[nombre2.length() - 1];
+    cout << cadena2[cadena2.length() - 1];
     o
 
 ## Concatenación de cadenas
