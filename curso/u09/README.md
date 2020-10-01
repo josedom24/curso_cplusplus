@@ -20,7 +20,7 @@ Podemos declarar una variable y posteriormente inicializarla (con el operador de
 
 Si declaramos una variable y no la inicializamos tendrá un valor por defecto: la variables numéricas tendrá un valor de `0` y los caracteres tendrán un valor de `\0`.
 
-Las variables hay que declararla antes de usarla, pero es muy recomendable declarar todas las variables al principio de l función (esto era obligatorio en el lenguaje C).
+Las variables hay que declararla antes de usarla, pero es muy recomendable declarar todas las variables al principio de la función (esto era obligatorio en el lenguaje C).
 
 
 ## Ámbito de las variables
