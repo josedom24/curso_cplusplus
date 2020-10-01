@@ -183,7 +183,7 @@ CuentaJoven::CuentaJoven(Persona nt,float nc,int nb):Cuenta(nt,nc)
 
 string CuentaJoven::mostrar()
 {
-	return "CUENTA JOVEN\n Titular: "+titular.mostrar() + " - Cantidad: " + to_string(cantidad) + " - Bonificación: " + to_string(bonificacion);
+	return "CUENTA JOVEN\n Titular: "+titular.mostrar() + " - Cantidad: " + to_string(cantidad) + " - Bonificaciï¿½n: " + to_string(bonificacion);
 }
 
 bool CuentaJoven::esTitularValido()
@@ -194,14 +194,14 @@ bool CuentaJoven::esTitularValido()
 void CuentaJoven::retirar(float ncantidad)
 {
 	if(!esTitularValido())
-		cout << "No puedes retirar dineo. Titular no válido" << endl;
+		cout << "No puedes retirar dineo. Titular no vï¿½lido" << endl;
 	else
 		cantidad = cantidad - ncantidad;
 	
 }
 
 int main(int argc, char *argv[]) {
-	Persona yo("José Domingo",40,"12345678X");
+	Persona yo("Josï¿½ Domingo",40,"12345678X");
 	CuentaJoven micuenta(yo,100,10);
 	cout << micuenta.get_cantidad() << endl;
 	cout << micuenta.mostrar() << endl;
@@ -215,4 +215,5 @@ int main(int argc, char *argv[]) {
 	
 	micuenta.retirar(10);
 	cout << micuenta.mostrar() << endl;
+	return 0;
 }

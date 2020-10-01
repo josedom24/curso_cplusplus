@@ -108,11 +108,12 @@ bool Persona::esMayorDeEdad()
 }
 
 int main(int argc, char *argv[]) {
-	Persona yo("José Domingo",40,"12345678X");
+	Persona yo("Josï¿½ Domingo",40,"12345678X");
 	yo.set_dni("12345678W");
 	cout << yo.mostrar()<<endl;
 	if(yo.esMayorDeEdad())
 		cout << "Es mayor de edad" << endl;
 	//yo.validar_dni();
+	return 0;
 	
 }
