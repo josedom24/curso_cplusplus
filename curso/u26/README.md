@@ -16,7 +16,7 @@ Para declarar un array debemos indicar el número de elementos que va a tener el
 
         <tipo> <identificador>[N1][N2]...[Nn]
 
-	Esta instrucción define un array con el nombre indicado en <identificador> y `n` dimensiones. Los `n` parámetros indican la cantidad de dimensiones y el valor máximo de cada una de ellas. La cantidad de dimensiones puede ser una o más, y la máxima cantidad de elementos debe ser una expresión numérica positiva.
+Esta instrucción define un array con el nombre indicado en <identificador> y `n` dimensiones. Los `n` parámetros indican la cantidad de dimensiones y el valor máximo de cada una de ellas. La cantidad de dimensiones puede ser una o más, y la máxima cantidad de elementos debe ser una expresión numérica positiva.
 
 Por ejemplo definimos un array de una dimensión (también llamado **vector**) de 10 elementos enteros.
 
