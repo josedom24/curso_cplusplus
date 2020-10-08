@@ -1,4 +1,4 @@
-# Ejercicios de arreglos
+# Ejercicios de arrays
 
 ### Ejercicio 1
 
