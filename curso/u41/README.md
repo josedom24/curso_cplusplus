@@ -1,82 +1,105 @@
-# Herencia y delegación
+# Encapsulamiento en la programación orientada a objetos
 
-## Herencia
+En la unidad anterior terminamos viendo que teníamos la posibilidad de cambiar los valores de los atributos de un objeto. En muchas ocasiones es necesario que esta modificación no se haga directamente, sino que tengamos utilizar un método para realizar la modificación y poder controlar esa operación. También puede ser deseable que la devolución del valor de los atributos se haga utilizando un método. La característica de no acceder o modificar  los valores de los atributos directamente y utilizar métodos para ello lo llamamos **encapsulamiento**.
 
-La herencia es un mecanismo de la programación orientada a objetos que sirve para crear clases nuevas a partir de clases preexistentes. Se toman (heredan) atributos y métodos de las clases bases y se los modifica para modelar una nueva situación.
-La clase desde la que se hereda se llama **clase base** y la que se construye a partir de ella es una **clase derivada**.
+## Miembros privados
 
-En C++ hay distintos tipos de herencia. En este curso vamos a ver un ejemplo de una **herencia simple** donde creamos una clase derivada a partir de una clase base. Otro tipo que no estudiaremos es la **herencia múltiple** donde se crea una clase derivada a partir de varias clases bases.
+Tanto los atributos como los métodos pueden ser públicos o privados. En el caso de los atributos para conseguir el encapsulamiento lo definimos como privados y nos se podrán acceder o modificar a sus valores directamente, tendremos que usar métodos para modificar sus valores o para obtener sus valores. De esta manera tendremos el control del valor que pueden tomar los atributos.
 
-## Derivar clases
+Del mismo modo podemos tener métodos privados. si un método es privado no se podrá usar directamente desde el objeto pero si podrá ser usado desde otro método de la clase.
 
-La sintaxis para realizar una herencia simple sería:
+Veamos el ejemplo de la clase `Punto` con los atributos privados y métodos de lectura y escritura para cada atributo. Además vamos asegurarnos que nuestros puntos están en el primer cuadrante, es decir el valor de la x y de la y deben ser positivo:
 
-    class <clase_derivada>:[public|private] <clase_base> 
+    #include <iostream>
+    #include <cmath>
+    using namespace std;
+    
+    class Punto
     {
-        ...
-    }
-
-Por ejemplo:
-
-    class Punto3d: public Punto
+    	//Atributos
+    
+    	float x;
+    	float y;
+    public:	
+    	//Métodos
+    	Punto();
+    	Punto(float nx, float ny);
+    	void mostrar();
+    	float distancia(Punto otro);
+    	void set_x(float nx);
+    	float get_x();
+    	void set_y(float nx);
+    	float get_y();
+    };	
+    
+    Punto::Punto()
     {
-        ...
+    	x=0;
+    	y=0;
     }
-
-Vemos que la clase base la podemos definir con dos tipos de acceso:
-
-* `public`: los miembros heredados de la clase base conservan el tipo de acceso con que fueron declarados en ella.
-* `private`: todos los miembros heredados de la clase base pasan a ser miembros privados en la clase derivada.
-
-En esta introducción vamos a indicar el tipo de acceso `public`.
-
-Además vamos añadir un nuevo tipo de acceso a la declaración de los miembros en la clase base. Habíamos visto el tipo de acceso `public` (se pueden acceder desde el exterior) y el `private` (no se pueden acceder desde el exterior, usamos un método para ello). ahora incluimos un nuevo tipo de acceso pensando en la herencia:
-
-* `protected`: Que nos permite que los datos sean inaccesibles desde el exterior de las clases, pero a la vez, permite que sean accesibles desde las clases derivadas.
-
-## Constructores en clases derivadas
-
-Cuando se crea un objeto de una clase derivada, primero se invoca al constructor de la clase o clases base y a continuación al constructor de la clase derivada. 
-
-Cuando queramos inicializar las clases base usando parámetros desde el constructor de una clase derivada lo haremos de este modo:
-
-    <clase_derivada>(<lista_de_parámetros>) :  <clase_base>(<lista_de_parámetros>) 
+    Punto::Punto(float nx, float ny)
     {
-        ...
+    	x=nx;
+    	y=ny;
     }
-Es decir, el constructor de la clase derivada recibe todos los parámetros y llama al constructor de la clase base envíando los parámetros adecuados para finalmente inicializar los atributos que le son propio. Por ejemplo:
-
-    Punto3d::Punto3d(float nx,float ny, float nz):Punto(nx,ny)
-    {   
-	    z=nz;
+    void Punto::mostrar()
+    {
+    	cout << x << "-" << y;
+    }
+    float Punto::distancia(Punto otro)
+    {
+    	float dx, dy;
+    	dx = x - otro.x;
+    	dy = y - otro.y;
+    	return sqrt(dx*dx + dy*dy);
+    }
+    
+    
+    void Punto::set_x(float nx)
+    {
+    	if (nx>=0)
+    		x=nx;
+    	else
+    		x=0;
+    }
+    
+    float Punto::get_x()
+    {
+    	return x;
+    }
+    
+    void Punto::set_y(float ny)
+    {
+    	if (ny>=0)
+    		y=ny;
+    	else
+    		y=0;
+    }
+    
+    float Punto::get_y()
+    {
+    	return y;
+    }
+    
+    int main(int argc, char *argv[]) {
+    
+    	Punto punto1;
+    	Punto punto2(4,5);
+    
+    	//Estas instrucciones darían un error de compilación
+    	//punto1.x=6;
+    	//cout << punto1.x;
+    
+    	punto1.set_x(6);
+    	cout << punto1.get_x() << endl;
+    
+    	punto1.mostrar();
+    	cout << endl;
+    	punto2.mostrar();
+    	cout << endl;
+    	cout << punto1.distancia(punto2);
+    
+    	return 0;
     }
 
-Si nuestra clase base es la clase `Punto` estudiada en unidades anteriores, puedo crear una nueva clase de la siguiente manera: [Accede al código](https://github.com/josedom24/curso_cplusplus/blob/master/curso/u41/punto3d.cpp)
 
-## Delegación
-
-Llamamos delegación a la situación en la que una clase contiene (como atributos) una o más instancias de otra clase, a las que delegará parte de sus funcionalidades.
-A partir de la clase punto, podemos crear la clase circulo de esta forma:
-
-```
-class Circulo
-{
-public:
-	Punto centro;
-	float radio;
-	
-	//Métodos
-	Circulo(Punto nc,float nr);
-	void mostrar();
-};	
-
-Circulo::Circulo(Punto nc,float nr)
-{
-	centro = nc;
-	radio = nr;
-}
-void Circulo::mostrar()
-{
-	cout << "Centro:" << centro.get_x() << "-" << centro.get_y() << " - Radio:" << radio ;
-}
-```

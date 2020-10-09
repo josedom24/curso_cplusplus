@@ -1,147 +1,84 @@
-# Introducción a la programación orientada a objetos
-
-La Programación Orientado a Objetos (POO) se basa en la agrupación de objetos de distintas clases que interactúan entre sí y que, en conjunto, consiguen que un programa cumpla su propósito.
+# Más Ejercicios
 
 
-## Definición de clase, objeto, atributos y métodos
+### Ejercicio 1
 
-* Llamamos **clase** a la representación abstracta de un concepto. Por ejemplo, "perro", "número entero" o "servidor web".
-* Las clases se componen de **miembros**.
-* Los miembros de una clase pueden ser de dos tipos: **atributos** y **funciones asociadas** o **métodos**.
-* Los miembros de una clase pueden ser públicos o privados. 
-* Un **objeto** es cada una de las instancias de una clase. Es decir las variables de este tipo de datos que es la clase llamamos **objeto**.
-* Los **atributos** definen las características propias del objeto y modifican su estado. Son datos asociados a las clases y a los objetos creados a partir de ellas.
-* Un **atributo de objeto** se define dentro de un método y pertenece a un objeto determinado de la clase instanciada.
-* Los **métodos** son bloques de código (o funciones) de una clase que se utilizan para definir el comportamiento de los objetos.
+Realice un programa que pregunte aleatóriamente una multiplicación. El programa debe indicar si la respuesta ha sido correcta o no (en caso que la respuesta sea incorrecta el programa debe indicar cuál es la correcta). El programa preguntará 10 multiplicaciones,  y al finalizar mostrará el número de aciertos.
 
-Para definir una clase usamos la siguiente sintaxis:
+### Ejercicio 2
 
-	class NOMBRE_CLASE
-	{
-			<atributos y métodos privados>
-		public:
-			<atributos y métodos públicos>
-	};
+El DNI (Documento Nacional de Identidad) en España está formada por 8 números y una letra. La letra nos sirve para verificar que el número es correcto, por lo tanto la letra se calcula a partir del número. Busca información de cómo se realiza el calculo y crea una función `CalcularLetra` que recibe un número y devuelva la letra que le corresponde.
 
-Se puede usar la etiqueta `private:` para indicar los miembros privados, por defecto las declaraciones de una clase son privadas. En esta unidad vamos a trabajar con miembros públicos, en la siguiente unidad introduciremos los miembros privados.
+La función anterior la podemos utiliza para crear una nueva función `ValidarDNI` que recibe un DNI (cadena de caracteres con 8 números y una letra) que valida el DNI, es decir comprueba si la letra del DNI ces igual a la letra calculada a partir del número.
 
-Para declarar los método o funciones asociadas lo podemos hacer dentro de la declaración de la clase o declarando sólo el prototipo de la función e implementando la función fuera de la declaración de la clase. Está última alternativa es la que vamos a usar, y para ello es necesario cualificar el nombre de la misma con el nombre de la clase utilizando la sintaxis: `<clase>::<función>`.
+Realiza un programa principal que lea un DNI y valide que es correcto (se debe comprobar también que tiene 9 caracteres).
 
-Para declarar un objeto usamos la siguiente forma de declaración:
+### Ejercicio 3
 
-	<clase> <objeto1>,...<objetoN>
-
-Por último para acceder a los miembros de un objeto una vez declarado vamos a usar el operador `.`.
-
-	objeto1.atributo1
-	objeto1.funcion1(...)
-
-Veamos un ejemplo donde vamos a crear una clase para guardar la información de un *Punto*. Tendrá dos atributos para guardar el valor de la coordenada x e y. Además tendrá un método para mostrar la información del punto:
-
-	#include <iostream>
-	using namespace std;
-
-	class Punto
-	{
-		//Atributos
-	public:
-		float x;
-		float y;
-
-		//Métodos
-		void mostrar();
-
-	};	
-
-	void Punto::mostrar()
-	{
-		cout << x << "-" << y;
-	}
-
-	int main(int argc, char *argv[]) {
-
-		Punto punto1;
-		punto1.x=4;
-		punto1.y=8;
-		cout << punto1.x << endl;
-		punto1.mostrar();
-
-		return 0;
-	}
-
-Hemos creado un objeto `punto1` de la clase `Punto`:
-
-	Punto punto1;
-
-Como podemos ver al ser los miembros (atributos y métodos) públicos podemos modificarlos y usarlos desde el programa principal:
-
-	punto1.x=4;
-	punto1.y=8;
-	...
-	punto1.mostrar();
-
-Y podemos obtener los valores de los atributos:
-
-	cout << punto1.x << endl;
-
-## Constructores
-
-¿Qué valores tienen los atributos al crear un objeto? C++ no permite inicializar los valores de los atributos de forma automática cuando declaramos un objeto, para ello vamos a usar unos métodos especiales que llamamos **constructores**.Los constructores son métodos que se deben llamar igual que la clase y sin tipo de valor de retorno. Además como una de las características de la Programación Orientada a Objetos es la sobrecarga de funciones, podemos tener varias funciones asociadas o métodos que se llamen igual pero que reciban diferentes cantidad de parámetros o de diferentes tipos.
-
-Veamos otro ejemplo donde hemos introducido dos constructores y otro método que nos devuelve la distancia a otro punto:
-
-	#include <iostream>
-	#include <cmath>
-	using namespace std;
-
-	class Punto
-	{
-		//Atributos
-		public:
-			float x;
-			float y;
-
-		//Métodos
-		Punto();
-		Punto(float nx, float ny);
-		void mostrar();
-		float distancia(Punto otro);
-	};	
-
-	Punto::Punto()
-	{
-		x=0;
-		y=0;
-	}
-	Punto::Punto(float nx, float ny)
-	{
-		x=nx;
-		y=ny;
-	}
-	void Punto::mostrar()
-	{
-		cout << x << "-" << y;
-	}
-	float Punto::distancia(Punto otro)
-	{
-		float dx, dy;
-		dx = x - otro.x;
-		dy = y - otro.y;
-		return sqrt(dx*dx + dy*dy);
-	}
+Realizar una aplicación que recoja por teclado la cantidad total a pagar y la cantidad que se ha entregado. La aplicación debe calcular el cambio correspondiente con el menor número de monedas y/o billetes posibles.
 
 
-	int main(int argc, char *argv[]) {
+### Ejercicio 4
 
-		Punto punto1;
-		Punto punto2(4,5);
-		punto1.mostrar();
-		cout << endl;
-		punto2.mostrar();
-		cout << endl;
-		cout << punto1.distancia(punto2);
+Realizar un algoritmo que permita descomponer un número en sus factores primos.
 
-		return 0;
-	}
+### Ejercicio 5
 
-Al declarar el objeto `punto1` se utiliza el primer constructor e inicializa los dos atributos a 0, sin embargo al crear el objeto `punto2` hemos usado el segundo constructor donde los atributos se inicializan con los valores de los parámetros que recibe.
+Vamos a realizar dos funciones: una que nos permita convertir un número entero a binario, y otra que nos permita convertir un numero binario a decimal.
+
+* `ConvertirABinario`: Función que recibe un número entero y devuelve una cadena con la representación del número en binario.
+* `ConvertirADecimal`: Función que recibe una cadena con la representación binaria de un número y devuelve el número en decimal.
+
+Crea un programa principal que permita convertir de decimal a binario y de binario a decimal.
+
+### Ejercicio 6
+
+Crear un programa que convierta un número entero (mayor que 1 y menor o igual que 1000) a número romano.
+
+### Ejercicio 7
+
+Diseñar un programa que permita adivinar al ordenador un determinado número entero y positivo para lo cual se deben leer los límites en los que está comprendido dicho número. El programa deberá ir mostrando números que recibirán las siguientes respuestas:
+1. 'S', si es correcto.
+2. 'A', si es más alto que el número a adivinar.
+3. 'B', si es más bajo.
+Al finalizar el programa, se deberá escribir el número de intentos realizados para acertar el número.
+
+
+### Ejercicio 8
+Realizar un programa que pida un mes y un año (superior a 1900) y muestre el calendario del mes de esta manera:
+	
+	 L   M   M   J   V   S   D
+	==========================
+	     1   2   3   4   5   6
+	 7   8   9  10  11  12  13
+	14  15  16  17  18  19  20
+	21  22  23  24  25  26  27
+	28  29  30  31
+
+Para ello es necesario averiguar que día de la semana (Lunes, Martes, ...) corresponde con un fecha determinada. Hay muchas maneras de calcularlo: nosotros vamos a contar los días que han trascurridos desde el año 1900 (podemos hacer uso de funciones que hemos utilizado en ejercicios anteriores), y una vez calculado le hacemos el módulo  7 y el número obtenido será el da de la semana (0: domingo, 1: lunes, ...) (NOTA: ten en cuanta que queremos realizar un calendario que empiece en lunes, no en domingo).
+
+### Ejercicio 9
+
+Vamos a programar el juego "Mastermind", para ello el programa debe "eligir" un número de cuatro cifras (sin cifras repetidas), que será el código que el jugador debe adivinar en la menor cantidad de intentos posibles. Cada intento consiste en una propuesta de un código posible que escribe el jugador, y una respuesta del programa. Las respuestas le darán pistas al jugador para que pueda deducir el código.
+
+* Número de "MUERTOS": Es la cantidad de dígitos que están en el número secreto y en la misma posición,
+* Número de "HERIDOS:" Es la cantidad de dígitos que están en el número secreto pero no en la misma posición.
+
+Por ejemplo, si el código que eligió el programa es el 2607, y el jugador propone el 1406, el programa le debe responder un MUERTO (el 0, que está en el código original en el mismo lugar, el tercero), y un HERIDO (el 6, que también está en el código original, pero en la segunda posición, no en el cuarto como fue propuesto). 
+
+### Ejercicio 10
+
+Escribe un programa para jugar al ahorcado.
+
+* Un jugador introduce una palabra secreta y otro jugador tratará de adivinarla.
+* Aparecerá la palabra oculta (se mostrará un conjunto de asteriscos con la longitud de la palabra que hay que adivinar).
+* El programa te va pidiendo letras.
+* Si la letra está en la palabra, se mostrar la palabra mostrando las letras acertadas y los asteriscos en las letras que faltan por averiguar.
+* Cada vez que se introduce una letra se muestra las letras que has introducido anteriormente.
+* Si la letra no se encuentra en la palabra se suma un fallo. Según el número de fallos se mostrará el dibujo del ahorcado cada vez ms completo. 
+* Si introduces todas las letras de la palabra has ganada y te mostrará el número de intentos que has necesitado.
+* Si produces 6 fallos, habrás perdido y se mostrará el dibujo del ahorcado completo.
+
+# Ejercicios resueltos
+
+[Más ejercicios](../../ejercicios/mas_ejercicios)

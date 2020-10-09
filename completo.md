@@ -55,22 +55,23 @@
 
 31. [Introducción a los punteros (I)](curso/u31)
 32. [Introducción a los punteros (II)](curso/u32)
-33. [Tipos de datos complejos: estructuras](curso/u33)
+33. [Introducción a las referencias en C++](curso/u33)
+34. [Tipos de datos complejos: estructuras](curso/u34)
 
 ## Programación estructurada
 
-34. [Programación estructurada](curso/u34)
-35. [Funciones y procedimientos](curso/u35)
-36. [Funciones recursivas](curso/u36)
-37. [Ejercicios con funciones](curso/u37)
-38. [Más ejercicios](curso/u38)
+35. [Programación estructurada](curso/u35)
+36. [Funciones y procedimientos](curso/u36)
+37. [Funciones recursivas](curso/u37)
+38. [Ejercicios con funciones](curso/u38)
+39. [Más ejercicios](curso/u39)
 
 ## Programación orientada a objetos
 
-39. [Introducción a la programación orientada a objetos](curso/u39)
-40. [Encapsulamiento en la programación orientada a objetos](curso/u40)
-41. [Herencia y delegación](curso/u41)
-42. [Ejercicios de programación orientada a objetos](curso/u42)
+40. [Introducción a la programación orientada a objetos](curso/u40)
+41. [Encapsulamiento en la programación orientada a objetos](curso/u41)
+42. [Herencia y delegación](curso/u42)
+43. [Ejercicios de programación orientada a objetos](curso/u43)
 
 
 

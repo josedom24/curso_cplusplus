@@ -1,6 +1,49 @@
-# Funciones y procedimientos
+# Programación estructurada
 
-Partimos del ejemplo anterior de función:
+La programación estructurada es un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de ordenador o algoritmo, utilizando únicamente subrutinas (funciones o procedimientos) y tres estructuras: secuencia, alternativas y repetitivas.
+
+La programación modular es un paradigma de programación que consiste en dividir un programa en módulos o subprogramas con el fin de hacerlo más legible y manejable.
+
+Al aplicar la programación modular, un problema complejo debe ser dividido en varios subproblemas más simples, y estos a su vez en otros subproblemas más simples. Esto debe hacerse hasta obtener subproblemas lo suficientemente simples como para poder ser resueltos fácilmente con algún algoritmo (divide y vencerás). Además el uso de subrutinas nos proporciona la reutilización del código y no tener repetido instrucciones que realizan la misma tarea.
+
+## Subrutinas en C++
+
+Tenemos dos clases de subrutinas:
+
+* **Funciones**: Subrutina que devuelve un valor.
+* **Procedimientos**: Subrutina que no devuelve ningún resultado.
+
+Para definir una función o procedimiento:
+
+	tipo nombre_de_la_subrutina(argumento_1, argumento_2, ... )
+	{
+		acción 1;
+		acción 2;
+             .
+             .
+             .
+		acción n;
+	}
+    
+* Comienza con el tipo de datos que va a devolver la subrutina. Normalmente todas las subrutinas devuelven un valor de algún tipo (las llamamos **funciones**), pero si no se devuelve ningún dato (las llamamos **procedimientos**) y el tipo de dato es `void`.
+* el nombre de la subrutina.
+* Si la subrutina no recibe ningún valor pueden colocarse los paréntesis vacíos.
+
+## Ejemplo de función
+
+Vamos a crear una función que calcule el valor máximo de dos números:
+
+	int CalcularMaximo(int num1,int num2)
+	{
+		if(num1>num2)
+			return num1;
+		else
+			return num2;
+	}
+
+Hemos definido una función que va a devolver una variable entera. Para devolver valores usamos la instrucción `return`. Esta instrucción devuelve el valor indicado y termina la ejecución de la función.
+
+Para utilizar dicha función en el programa principal, primero debemos definir **el prototipo de la función** antes del programa principal para que la podamos utilizar, el programa quedaría:
 
 	#include <iostream>
 	using namespace std;
@@ -26,104 +69,28 @@ Partimos del ejemplo anterior de función:
 			return num2;
 	}
 
-## Devolución de resultados
+## Ejemplo de procedimiento
 
-Cuando la función finaliza hemos dicho que se devuelve un valor (Recuerda que los procedimientos no devuelven valor). Para devolver un valor usamos la instrucción `return` seguida del valor a devolver. Una función puede tener varias instrucciones `return`, cuando se ejecuta una se devuelve el valor y se termina la ejecución de la función.
-
-## Llamada a la función
-
-Para llamar a una función se debe utilizar su nombre y entre paréntesis los parámetros reales que se mandan. La llamada a una función se puede considerar una expresión cuyo valor y tipo es el retornado por la función. Evidentemente si estamos llamando un procedimiento, la llamada no tendrá ningún tipo.
-
-Ejemplos de llamadas:
-
-	num1 = CalcularMaximo(5,6);
-	cout << CalcularMaximo(1,2);
-	...
-
-## Ámbito de variables
-
-Las variables definidas en la función no existen en otras funciones o el programa principal. Igualmente las variables del programa principal no existen en la función.
-
-Si tuvieramos alguna variables definida en la función no existiría en el programa principalmente. Igualmente la variable `numero1`` definida en el programa principal no existe en la función.
-
-
-## Parámetros formales y reales
-
-* **Parámetros formales**: Son las variables que recibe la función, se crean al definir la función. Su contenido lo recibe al realizar la llamada a la función de los parámetro reales. Los parámetros formales son variables locales dentro de la función.
-
-* **Parámetros reales**: Son la expresiones que se utilizan en la llamada de la función, sus valores se copiarán en los parámetros formales.
-
-## Paso de parámetros
-
-* **Paso por valor**: El valor de los parámetros reales se copian en los parámetros formales, por lo tanto una modificación de algún parámetro formal no modifica el parámetro real.
-
-* **Paso por puntero**: Mandaremos a la función un puntero (parámetro formal) al parámetro real y de esta manera la podremos modificar. Esto implica que si modificamos el parámetro formal se modificará el parámetro real.
-
-* **Paso por referencia**: La referencia en C++ es una característica específica de este lenguaje. Nos permite darle un alias a una variable que ya se encuentra en existencia para, de esta forma, lograr realizar cambios sobre dicha variable por medio de ese alias. En términos más sencillos, solo es darle otro nombre a la misma variable. Esto también nos permite que el cambio del parámetro formal modifica el parámetro real.
-
-**Nota: En los ejercicios propuestos en este curso utilizaremos este último método para pasar parámetros de entrada y salida a las funciones**.
-
-
-## Ejemplos
-
-Comprobamos que los parámetros pasados **por valor** no modifican los parámetros reales.
+Vamos a escribir un procedimiento que recibe una cadena de caracteres y lo muestra en pantalla subrayado. No devuelve ningún valor.
 
 	#include <iostream>
 	using namespace std;
-	void PasoPorValor(int num);
+	void Subrayar(string cad);
 
 	int main(int argc, char *argv[]) {
-		int numero1=5;
-		PasoPorValor(numero1);
-		cout << numero1 << endl;
+		string nombre;
+		cout << "Dame un nombre:";
+		getline(cin,nombre);
+		Subrayar(nombre);
 		return 0;
 	}
 
-	void PasoPorValor(int num)
+	void Subrayar(string cad)
 	{
-		num = num + 1;
-		cout << num << endl;
+		int i;
+		cout << cad << endl;
+		for (i=0;i<cad.size();i++)
+			cout << "-";
 	}
 
-El resultado será 6 y 5. Hemos incrementado el valor del parámetro formal, pero no se ha modificado el real.
-
-Veamos ahora el mismo programa pero pasando el parámetro por **punteros**:
-
-	#include <iostream>
-	using namespace std;
-	void PasoPorReferencia(int *num);
-
-	int main(int argc, char *argv[]) {
-		int numero1=5;
-		PasoPorReferencia(&numero1);
-		cout << numero1 << endl;
-		return 0;
-	}
-
-	void PasoPorReferencia(int *num)
-	{
-		*num = *num + 1;
-		cout << *num << endl;
-	}
-
-
-El resultado será 6 y 6. Hemos modificado el parámetro formal y se modificado el real.
-
-Si realizamos este ejercicio con **referencias en C++**:
-
-	#include <iostream>
-	using namespace std;
-	void PasoPorReferencia(int &num);
-
-	int main(int argc, char *argv[]) {
-		int numero1=5;
-		PasoPorReferencia(numero1);
-		cout << numero1 << endl;
-		return 0;
-	}
-
-	void PasoPorReferencia(int &num)
-	{
-		num = num + 1;
-		cout << num << endl;
-	}
+**NOTA:** Para simplificar la terminología solemos hablar siempre de funciones, aunque sean procedimientos.Es decir, un procedimiento es una función que no devuelve ningún valor.
