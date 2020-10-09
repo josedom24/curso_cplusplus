@@ -51,7 +51,7 @@ Es decir, el constructor de la clase derivada recibe todos los parámetros y lla
 	    z=nz;
     }
 
-Si nuestra clase base es la clase `Punto` estudiada en unidades anteriores, puedo crear una nueva clase de la siguiente manera: [Accede al código](https://github.com/josedom24/curso_cplusplus/blob/master/curso/u41/punto3d.cpp)
+Si nuestra clase base es la clase `Punto` estudiada en unidades anteriores, puedo crear una nueva clase de la siguiente manera: [Accede al código](punto3d.cpp)
 
 ## Delegación
 
