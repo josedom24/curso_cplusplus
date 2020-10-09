@@ -53,15 +53,20 @@ Si tuvieramos alguna variables definida en la función no existiría en el progr
 
 * **Parámetros reales**: Son la expresiones que se utilizan en la llamada de la función, sus valores se copiarán en los parámetros formales.
 
-## Paso de parámetro por valor o por referencia
+## Paso de parámetros
 
 * **Paso por valor**: El valor de los parámetros reales se copian en los parámetros formales, por lo tanto una modificación de algún parámetro formal no modifica el parámetro real.
-* **Paso por referencia**: Cuando se pasa un parámetro por referencia implica que si modificamos el parámetro formal se modificará el parámetro real. Para poder modificar los parámetros reales vamos a usar **punteros**, de esta manera mandaremos a la función un puntero (parámetro formal) al parámetro real y de esta manera la podremos modificar.
+
+* **Paso por puntero**: Mandaremos a la función un puntero (parámetro formal) al parámetro real y de esta manera la podremos modificar. Esto implica que si modificamos el parámetro formal se modificará el parámetro real.
+
+* **Paso por referencia**: La referencia en C++ es una característica específica de este lenguaje. Nos permite darle un alias a una variable que ya se encuentra en existencia para, de esta forma, lograr realizar cambios sobre dicha variable por medio de ese alias. En términos más sencillos, solo es darle otro nombre a la misma variable. Esto también nos permite que el cambio del parámetro formal modifica el parámetro real.
+
+**Nota: En los ejercicios propuestos en este curso utilizaremos este último método para pasar parámetros de entrada y salida a las funciones**.
 
 
 ## Ejemplos
 
-Comprobamos que los parámetros pasados por valor no modifican los parámetros reales.
+Comprobamos que los parámetros pasados **por valor** no modifican los parámetros reales.
 
 	#include <iostream>
 	using namespace std;
@@ -82,7 +87,7 @@ Comprobamos que los parámetros pasados por valor no modifican los parámetros r
 
 El resultado será 6 y 5. Hemos incrementado el valor del parámetro formal, pero no se ha modificado el real.
 
-Veamos ahora el mismo programa pero pasando el parámetro por referencia.
+Veamos ahora el mismo programa pero pasando el parámetro por **punteros**:
 
 	#include <iostream>
 	using namespace std;
@@ -104,4 +109,21 @@ Veamos ahora el mismo programa pero pasando el parámetro por referencia.
 
 El resultado será 6 y 6. Hemos modificado el parámetro formal y se modificado el real.
 
+Si realizamos este ejercicio con **referencias en C++**:
 
+	#include <iostream>
+	using namespace std;
+	void PasoPorReferencia(int &num);
+
+	int main(int argc, char *argv[]) {
+		int numero1=5;
+		PasoPorReferencia(numero1);
+		cout << numero1 << endl;
+		return 0;
+	}
+
+	void PasoPorReferencia(int &num)
+	{
+		num = num + 1;
+		cout << num << endl;
+	}
