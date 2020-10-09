@@ -33,6 +33,7 @@ Persona::Persona(string nnombre,int nedad,string ndni)
 	nombre=nnombre;
 	edad=nedad;
 	dni=ndni;
+	validar_dni();
 }
 
 string Persona::get_nombre()
@@ -48,7 +49,7 @@ int Persona::get_edad()
 string Persona::get_dni()
 {
 	return dni;
-}
+}	
 
 void Persona::set_nombre(string nnombre)
 {
@@ -89,6 +90,7 @@ void Persona::validar_dni()
 	{
 		letra=dni[8];
 		num=stoi(dni.erase(8,1));  //stoi convierte un string a entero
+		dni=dni+letra;			//Vuelvo a poner la letra al DNI
 		if (toupper(letra) != letras[num%23])
 		{
 			cout << "DNI incorrecto." << endl;
@@ -108,8 +110,8 @@ bool Persona::esMayorDeEdad()
 }
 
 int main(int argc, char *argv[]) {
-	Persona yo("José Domingo",40,"12345678X");
-	yo.set_dni("12345678W");
+	Persona yo("Jose Domingo",40,"12345678Z");
+	//yo.set_dni("12345678W");
 	cout << yo.mostrar()<<endl;
 	if(yo.esMayorDeEdad())
 		cout << "Es mayor de edad" << endl;

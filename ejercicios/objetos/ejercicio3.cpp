@@ -32,6 +32,7 @@ Persona::Persona(string nnombre,int nedad,string ndni)
 	nombre=nnombre;
 	edad=nedad;
 	dni=ndni;
+	validar_dni();
 }
 
 string Persona::get_nombre()
@@ -88,6 +89,7 @@ void Persona::validar_dni()
 	{
 		letra=dni[8];
 		num=stoi(dni.erase(8,1));  //stoi convierte un string a entero
+		dni=dni+letra;			//Vuelvo a poner la letra al DNI
 		if (toupper(letra) != letras[num%23])
 		{
 			cout << "DNI incorrecto." << endl;
@@ -194,14 +196,14 @@ bool CuentaJoven::esTitularValido()
 void CuentaJoven::retirar(float ncantidad)
 {
 	if(!esTitularValido())
-		cout << "No puedes retirar dineo. Titular no vï¿½lido" << endl;
+		cout << "No puedes retirar dineo. Titular no válido" << endl;
 	else
 		cantidad = cantidad - ncantidad;
 	
 }
 
 int main(int argc, char *argv[]) {
-	Persona yo("José Domingo",40,"12345678X");
+	Persona yo("Jose Domingo",40,"12345678Z");
 	CuentaJoven micuenta(yo,100,10);
 	cout << micuenta.get_cantidad() << endl;
 	cout << micuenta.mostrar() << endl;
