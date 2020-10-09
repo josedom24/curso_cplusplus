@@ -4,6 +4,8 @@
 //teclado y muestre el máximo y el mínimo, utilizando la función anterior.
 //################################################################################
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 //Declaración de la función
 void CalcularMaxMin(int vector[10], int size,int &max, int &min);	
