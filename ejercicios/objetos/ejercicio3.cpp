@@ -201,7 +201,7 @@ void CuentaJoven::retirar(float ncantidad)
 }
 
 int main(int argc, char *argv[]) {
-	Persona yo("Josï¿½ Domingo",40,"12345678X");
+	Persona yo("José Domingo",40,"12345678X");
 	CuentaJoven micuenta(yo,100,10);
 	cout << micuenta.get_cantidad() << endl;
 	cout << micuenta.mostrar() << endl;

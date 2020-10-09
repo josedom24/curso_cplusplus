@@ -9,7 +9,7 @@ private:
 	string dni;
 	void validar_dni();
 public:
-	Paersona();
+	Persona();
 	Persona(string nnombre,int nedad,string ndni);
 	string get_nombre();
 	int get_edad();
@@ -108,7 +108,7 @@ bool Persona::esMayorDeEdad()
 }
 
 int main(int argc, char *argv[]) {
-	Persona yo("Josï¿½ Domingo",40,"12345678X");
+	Persona yo("José Domingo",40,"12345678X");
 	yo.set_dni("12345678W");
 	cout << yo.mostrar()<<endl;
 	if(yo.esMayorDeEdad())
