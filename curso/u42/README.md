@@ -30,7 +30,7 @@ Vemos que la clase base la podemos definir con dos tipos de acceso:
 
 En esta introducción vamos a indicar el tipo de acceso `public`.
 
-Además vamos añadir un nuevo tipo de acceso a la declaración de los miembros en la clase base. Habíamos visto el tipo de acceso `public` (se pueden acceder desde el exterior) y el `private` (no se pueden acceder desde el exterior, usamos un método para ello). ahora incluimos un nuevo tipo de acceso pensando en la herencia:
+Además vamos añadir un nuevo tipo de acceso a la declaración de los miembros en la clase base. Habíamos visto el tipo de acceso `public` (se pueden acceder desde el exterior) y el `private` (no se pueden acceder desde el exterior, usamos un método para ello). Ahora incluimos un nuevo tipo de acceso pensando en la herencia:
 
 * `protected`: Que nos permite que los datos sean inaccesibles desde el exterior de las clases, pero a la vez, permite que sean accesibles desde las clases derivadas.
 
