@@ -45,7 +45,9 @@ Ejemplos de llamadas:
 Las variables definidas en la función no existen en otras funciones o el programa principal. Igualmente las variables del programa principal no existen en la función.
 
 Si tuvieramos alguna variables definida en la función no existiría en el programa principalmente. Igualmente la variable `numero1`` definida en el programa principal no existe en la función.
-Parámetros formales y reales
+
+
+## Parámetros formales y reales
 
 * **Parámetros formales**: Son las variables que recibe la función, se crean al definir la función. Su contenido lo recibe al realizar la llamada a la función de los parámetro reales. Los parámetros formales son variables locales dentro de la función.
 
