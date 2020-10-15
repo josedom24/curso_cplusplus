@@ -8,7 +8,7 @@ El valor devuelto por una operación de comparación es un valor lógico:
 
 * `>`: Mayor que
 * `<`: Menor que
-* `=`: Igual que
+* `==`: Igual que
 * `<=`: Menor o igual
 * `>=`: Mayor o igual
 * `!=`: Distinto
